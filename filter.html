@@ -1,0 +1,1493 @@
+<style>
+.btn {display: inline-block;font-weight: 400;text-align: center;white-space: nowrap;vertical-align: middle;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;border: 1px solid transparent;padding: .375rem .75rem;font-size: 1rem;line-height: 1.5;border-radius: 0;transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;}
+.btn-secondary {color: #fff;background-color: #717171;border-color: #717171;border-radius: 16px;padding: 0 10px;font-size: 13px;line-height: 32px;}
+.btn-winterfest {color: #fff;background-color: #884890;border-color: #884890;border-radius: 16px;padding: 0 10px;font-size: 13px;line-height: 32px;}
+.btn-reset {color: #fff;background-color:#000000;border-radius: 16px;padding: 0 10px;font-size: 13px;line-height: 32px;margin-top:4.7rem;}
+.btn-reset:hover, .btn-reset:focus{background-color: #323232;}.btn-margin button{margin-bottom:8px;}h6 {margin-top:0;}.row {margin-bottom:30px;}.control:hover {color: #fff;background-color: #323232;}
+.mixitup-control-active{background:#006dae;border-color:#006dae;}.mixitup-control-active:after{background:0 0;}.control:not(.mixitup-control-active):hover{color:#fff;background:#323232}.btn-secondary:focus,.btn-winterfest:focus{box-shadow:none;}.btn-group{margin-bottom:1rem;}fieldset{min-width: 0;padding: 0;margin: 0;border: 0;}#clearfilter button {float:right;}.altmargin{margin-right:1.25rem;}legend{font-size:1.3125rem;margin-bottom:1em;line-height:1.2;font-family:'Roboto Condensed', sans-serif;}.box-listing-element.shadow-hover{box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);transition: all 0.25s ease-in-out;background-color: #fff;}.box-listing-element.shadow-hover:hover{box-shadow: 0 6px 6px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);}a.box-listing-element{text-decoration: none;color: black;border-bottom: none;}.box-listing-element.shadow-hover .box-listing-element__blurb{padding: 1.5rem 2rem 1.5rem 1.5rem;}.box-listing-element__footer{padding-bottom: 0.5rem;position: absolute;bottom: 0.625rem;width: calc(100% - 2rem);margin-right: 2rem;}.box-listing-element__footer span.box-listing-element__category-link{left: 1.5rem;max-width: 100%;position: unset;bottom: unset;}.box-listing-element.shadow-hover .box-listing-element__heading{color:#006dae;}.box-listing-element__description{display: block;margin-top: 1rem;margin-bottom: 1rem;}.controls h3 {margin-top:1.5rem;}@media screen and (max-width: 960px){#clearfilter button {margin-top:3rem;}}
+</style>
+
+<form class="controls" tab-index="0">
+    <div class="row">
+        <div class="col-md-6 col-sm-12 col-xs-12 btn-margin">
+            <h3>Day of the week</h3> 
+   	        <fieldset data-filter-group="">
+  		        <button type="button" aria-label="Monday" class="btn btn-secondary control" data-filter=".Mon">Monday</button>
+  		        <button type="button" aria-label="Tuesday" class="btn btn-secondary control" data-filter=".Tue">Tuesday</button> 
+  		        <button type="button" aria-label="Wednesday" class="btn btn-secondary control" data-filter=".Wed">Wednesday</button>
+  		        <button type="button" aria-label="Thursday" class="btn btn-secondary control" data-filter=".Thu">Thursday</button>
+  		        <button type="button" aria-label="Friday" class="btn btn-secondary control" data-filter=".Fri">Friday</button>
+  		        </fieldset>
+	    </div>
+	    
+	    <div class="col-md-3 col-sm-6 col-xs-12 btn-margin">
+	       <h3>Time of day</h3>
+	       <fieldset data-filter-group="">
+    	        <button type="button" aria-label="Morning" class="btn btn-secondary control" data-filter=".Morning">Morning</button>
+    	        <button type="button" aria-label="Afternoon" class="btn btn-secondary control" data-filter=".Afternoon">Afternoon</button>
+    	        <button type="button" aria-label="Evening" class="btn btn-secondary control" data-filter=".Evening">Evening</button>
+	            </fieldset>
+        </div>
+        
+         <div class="col-md-9 col-xs-12 btn-margin" style="margin-bottom:2rem;">
+         <h3>Audience</h3>
+	       <fieldset data-filter-group="">
+                <button type="button" aria-label="Students" class="btn btn-secondary control" data-filter=".Students">Students</button>
+                <button type="button" aria-label="HDR" class="btn btn-secondary control" data-filter=".HDR">HDR
+                </button>
+                <button type="button" aria-label="ECR" class="btn btn-secondary control" data-filter=".ECR">ECR</button>
+                <button type="button" aria-label="Researchers" class="btn btn-secondary control" data-filter=".Researchers">Researchers</button>
+                <button type="button" aria-label="Staff" class="btn btn-secondary control" data-filter=".Staff">Professional staff</button>
+                <button type="button" aria-label="Community" class="btn btn-secondary control" data-filter=".Community">Community</button>
+                <button type="button" aria-label="By-invitation" class="btn btn-secondary control" data-filter=".By-invitation">By Invitation</button>	
+                <button type="button" aria-label="Open-for-research" class="btn btn-secondary control" data-filter=".Open-for-research">Open for research</button>
+	            </fieldset>
+        </div>
+        
+        <div class="col-md-9 col-xs-12 btn-margin" style="margin-bottom:2rem;">
+	       <h3>Faculty/Area</h3>
+	       <fieldset data-filter-group="">
+    	        <button type="button" aria-label="DVCR(RI)" class="btn btn-secondary control" data-filter=".DVCR(RI)">DVCR(RI)</button>
+    	        <button type="button" aria-label="ARTS" class="btn btn-secondary control" data-filter=".ARTS">ARTS</button>
+    	        <button type="button" aria-label="BDI" class="btn btn-secondary control" data-filter=".BDI">BDI</button>
+    	        <button type="button" aria-label="BusEco" class="btn btn-secondary control" data-filter=".BusEco">BusEco</button>
+    	        <button type="button" aria-label="DVCE" class="btn btn-secondary control" data-filter=".DVCE">DVCE</button>
+    	        <button type="button" aria-label="DVCR" class="btn btn-secondary control" data-filter=".DVCR">DVCR</button>
+    	        <button type="button" aria-label="EDU" class="btn btn-secondary control" data-filter=".EDU">EDU</button>
+    	        <button type="button" aria-label="ENG" class="btn btn-secondary control" data-filter=".ENG">ENG</button>
+    	        <button type="button" aria-label="FIT" class="btn btn-secondary control" data-filter=".FIT">FIT</button>
+    	        <button type="button" aria-label="INNOVATION" class="btn btn-secondary control" data-filter=".INNOVATION">INNOVATION</button>
+    	        <button type="button" aria-label="LAW" class="btn btn-secondary control" data-filter=".LAW">LAW</button>
+    	        <button type="button" aria-label="LIB" class="btn btn-secondary control" data-filter=".LIB">LIB</button>
+    	        <button type="button" aria-label="MADA" class="btn btn-secondary control" data-filter=".MADA">MADA</button>
+    	        <button type="button" aria-label="MDFI" class="btn btn-secondary control" data-filter=".MDFI">MDFI</button>
+    	        <button type="button" aria-label="MI" class="btn btn-secondary control" data-filter=".MI">MI</button>
+    	        <button type="button" aria-label="MNHS" class="btn btn-secondary control" data-filter=".MNHS">MNHS</button>
+    	        <button type="button" aria-label="MSDI" class="btn btn-secondary control" data-filter=".MSDI">MSDI</button>
+    	        <button type="button" aria-label="MUM" class="btn btn-secondary control" data-filter=".MUM">MUM</button>
+    	        <button type="button" aria-label="PPS" class="btn btn-secondary control" data-filter=".PPS">PPS</button>
+    	        <button type="button" aria-label="SCI" class="btn btn-secondary control" data-filter=".SCI">SCI</button>
+    	        <button type="button" aria-label="VHH" class="btn btn-secondary control" data-filter=".VHH">VHH</button>
+	            </fieldset>
+        </div>
+        
+	    <div class="col-md-9 col-xs-12 btn-margin" style="margin-bottom:2rem;">
+	       <h3>Location</h3>
+	       <fieldset data-filter-group="">
+    	        <button type="button" aria-label="Online" class="btn btn-secondary control" data-filter=".Online">Online</button>
+    	        <button type="button" aria-label="Caulfield" class="btn btn-secondary control" data-filter=".Caulfield">Caulfield</button>
+    	        <button type="button" aria-label="Clayton" class="btn btn-secondary control" data-filter=".Clayton">Clayton</button>
+		        <button type="button" aria-label="Parkville" class="btn btn-secondary control" data-filter=".Parkville">Parkville</button>
+		        <button type="button" aria-label="Indonesia" class="btn btn-secondary control" data-filter=".Indonesia">Indonesia</button>
+		        <button type="button" aria-label="Malaysia" class="btn btn-secondary control" data-filter=".Malaysia">Malaysia</button>
+		   </fieldset>
+        </div>
+        
+        <div id="clearfilter" class="col-md-3 col-xs-12 btn-margin">
+            <button type="reset" aria-label="Start over" class="btn btn-reset">Start over</button>
+        </div>
+    </div>
+</form>
+
+<div class="research-week-events" id="MixItUpA97D96">
+<div class="row box-featured__group top-gap--standard">
+
+
+<!-- AI in Mental Health industry panel discussion -->
+<div class="col-xs-12 col-sm-4 box-listing-element__wrapper mix Thu Afternoon Staff Researchers HDR ECR Clayton FIT">
+    
+    <a href="https://www.eventbrite.com.au/e/ai-in-mental-health-industry-panel-discussion-tickets-730341580327?aff=oddtdtcreator" class="box-listing-element shadow-hover" title="AI in Mental Health industry panel discussion" target="_blank">
+    
+        <span class="box-listing-element__thumb-link">
+            <img src="https://www.monash.edu/__data/assets/image/0006/3430608/aiinmentalhealth.png" alt="" class="box-listing-element__thumb-image" loading="lazy">
+        </span>
+        <div class="box-listing-element__blurb">
+            <h2 class="box-listing-element__heading">AI in Mental Health industry panel discussion</h2>
+             <p class="box-listing-element__description">
+                Thursday, 2 – 3.30pm
+                <br>
+                Monash University, Woodside Building, Tiered Seating, Ground Floor, <br>
+                20 Exhibition Walk, Clayton Campus
+            </p>
+            <p class="box-listing-element__description">Join this event to discover how Monash Faculty of IT researchers are collaborating with leading organizations like Orygen, Headspace, Turning Point, MedicAI, and Outcome Health to revolutionize mental healthcare. Hear from a cross-disciplinary team about how Monash researchers are developing new models of care in mental health and new technologies to support Australians with their mental health.</p>
+        </div>
+    </a>
+</div>
+
+<!-- Indigenous Research Community Collaboration Event -->
+<div class="col-xs-12 col-sm-4 box-listing-element__wrapper mix Thu Morning Staff Researchers HDR ECR Community Clayton Online DVCR">
+    
+    <a href="https://www.eventbrite.com.au/e/739309844647?aff=oddtdtcreator" class="box-listing-element shadow-hover" title="Indigenous Research Community Collaboration Event" target="_blank">
+    
+        <span class="box-listing-element__thumb-link">
+            <img src="https://www.monash.edu/__data/assets/image/0008/3423833/Indigenous-Research-Community-Collaboration-alternate-3.png" alt="" class="box-listing-element__thumb-image" loading="lazy">
+        </span>
+        <div class="box-listing-element__blurb">
+            <h2 class="box-listing-element__heading">Indigenous Research Community Collaboration Event</h2>
+             <p class="box-listing-element__description">
+                Thursday, 9.30am – 12pm
+                <br>
+               The Chancellery Room, <br> 27 Chancellors Walk, Clayton Campus and Online
+            </p>
+            <p class="box-listing-element__description">A symposium focused on celebrating the positive impacts of Monash research in collaboration with Indigenous communities. This event will focus on the story telling of journeys of three senior Monash researchers and their community partners to illustrate effective ways that Monash University can tailor research towards community priorities.</p>
+        </div>
+    </a>
+</div>
+
+<!-- Discovery to Impact Splash -->
+<div class="col-xs-12 col-sm-4 box-listing-element__wrapper mix Wed Evening By-invitation Staff Researchers HDR ECR Community Clayton Online DVCR">
+    
+    <a href="https://www.eventbrite.com.au/e/discovery-to-impact-splash-tickets-730336003647?aff=oddtdtcreator" class="box-listing-element shadow-hover" title="Discovery to Impact Splash" target="_blank">
+    
+        <span class="box-listing-element__thumb-link">
+            <img src="https://www.monash.edu/__data/assets/image/0010/3431584/Discovery-to-Impact-Splash.png" alt="" class="box-listing-element__thumb-image" loading="lazy">
+        </span>
+        <div class="box-listing-element__blurb">
+            <h2 class="box-listing-element__heading">Discovery to Impact Splash</h2>
+             <p class="box-listing-element__description">
+                Wednesday, 5 – 7pm
+                <br>
+                The Chancellery, Atrium, 27 Chancellor's Walk, Clayton Campus and Online
+            </p>
+            <p class="box-listing-element__description">The Discovery to Impact Splash is a celebration of Monash's research excellence and impact. This dynamic event showcases eight researchers, each delivering rapid-fire presentations spanning the research spectrum, from discovery to real-world impact. Join us in honoring recent groundbreaking discoveries and fundamental science achievements from our brilliant research colleagues.</p>
+        </div>
+    </a>
+</div>
+
+<!-- Bridging the gap: Research Impact & University-Industry Collaborations -->
+<div class="col-xs-12 col-sm-4 box-listing-element__wrapper mix Mon Afternoon Staff HDR ECR Researchers open-for-research Clayton ENG">
+    <a href="https://www.eventbrite.com.au/e/744736124797?aff=oddtdtcreator" class="box-listing-element shadow-hover" title="Bridging the gap: Research Impact & University-Industry Collaborations" target="_blank">
+    
+        <span class="box-listing-element__thumb-link">
+            <img src="https://www.monash.edu/__data/assets/image/0004/3436717/banner-feature-box-1.png" alt="" class="box-listing-element__thumb-image" loading="lazy">
+        </span>
+        <div class="box-listing-element__blurb">
+            <h2 class="box-listing-element__heading">Bridging the gap: Research Impact & University-Industry Collaborations</h2>
+             <p class="box-listing-element__description">
+                Monday, 12 – 3pm
+                <br>
+              Woodside building G.05, 20 Exhibition Walk, Clayton Campus
+            </p>
+            <p class="box-listing-element__description">This event will highlight the pivotal role of collaborative research in bridging academic pursuits with industry innovations. It is designed to illuminate the vast potential that lies at the intersection of rigorous academic research and practical industry applications. Examples of successful partnerships will be provided, with insights from a panel of experts on the benefits of university-industry synergies.</p>
+        </div>
+    </a>
+</div>
+    
+<!-- Education Poster Exhibition -->
+<div class="col-xs-12 col-sm-4 box-listing-element__wrapper mix Mon Tue Wed Thu Fri Morning Staff Researchers Clayton EDU">
+    <a class="box-listing-element" title="Education Poster Exhibition">
+    
+        <span class="box-listing-element__thumb-link">
+            <img src="https://www.monash.edu/__data/assets/image/0010/3426481/education-poster-exhibition.png" alt="" class="box-listing-element__thumb-image" loading="lazy">
+        </span>
+        <div class="box-listing-element__blurb">
+            <h2 class="box-listing-element__heading">Education Poster Exhibition</h2>
+             <p class="box-listing-element__description">
+                 No registration required<br>
+               Monday - Friday, All day - 9am – 5pm
+                <br>
+               Ground Floor LTB, Clayton Campus
+            </p>
+            <p class="box-listing-element__description">Step into the dynamic world of Education research and experience the depth and diversity of their work. Available to view throughout Research Week, this display of posters from Education researchers highlight the innovative ideas, practices, and findings that are shaping the future of education. Be inspired by the wealth of knowledge and insights on display.</p>
+        </div>
+    </a>
+</div>
+
+<!-- Impact Working Group 2024 Planning with Dr David Phipps -->
+<div class="col-xs-12 col-sm-4 box-listing-element__wrapper mix Mon Morning By-invitation Clayton Online DVCR">
+    <a class="box-listing-element" title="Impact Working Group 2024 Planning with Dr David Phipps">
+    
+        <span class="box-listing-element__thumb-link">
+            <img src="https://www.monash.edu/__data/assets/image/0020/3435302/Dr.davidphipps.png" alt="" class="box-listing-element__thumb-image" loading="lazy">
+        </span>
+        <div class="box-listing-element__blurb">
+            <h2 class="box-listing-element__heading">Impact Working Group 2024 Planning with Dr David Phipps</h2>
+             <p class="box-listing-element__description">
+                Event participation: Only by invitation <br>
+                Monday, 10.30am – 12pm
+                <br>
+                Woodside Building, Clayton Campus and Online
+            </p>
+            <p class="box-listing-element__description">A networking and knowledge-sharing session featuring international research impact expert Dr David Phipps, focusing on research impact planning for 2024. Dr Phipps is the administrative lead for all research programs and their impacts on local and global communities at York University, and sits on knowledge mobilization committees around the world. Other notable appointments include Network Director for Research Impact Canada.</p>
+        </div>
+    </a>
+</div>
+
+<!-- Incubator Awardee Kick-off -->
+<div class="col-xs-12 col-sm-4 box-listing-element__wrapper mix Mon Afternoon By-invitation Clayton DVCR">
+    <a class="box-listing-element" title="Incubator Awardee Kick-off" target="_blank">
+    
+        <span class="box-listing-element__thumb-link">
+            <img src="https://www.monash.edu/__data/assets/image/0006/3435306/The-Incubator.png" alt="" class="box-listing-element__thumb-image" loading="lazy">
+        </span>
+        <div class="box-listing-element__blurb">
+            <h2 class="box-listing-element__heading">Incubator Awardee Kick-off</h2>
+             <p class="box-listing-element__description">
+               Event participation: Only by invitation<br>
+                Monday, 3 – 4.30pm
+                <br>
+                David Li Sound Gallery, 48 Exhibition Walk, Clayton Campus
+            </p>
+            <p class="box-listing-element__description">Welcoming the awardees for the 2024 Incubator program. This event will serve as a formal beginning of The Incubator, recognizing the pioneering research concepts and projects championed by awardees across Monash campuses, faculties, centres and insituties as they embark on their team projects.</p>
+        </div>
+    </a>
+</div>
+
+<!-- MSDI Affiliates Opening Event - Keynote speaker Prof. Derk Loorbach -->
+<div class="col-xs-12 col-sm-4 box-listing-element__wrapper mix Mon Morning Staff HDR ECR Researchers By-invitation Clayton Online MSDI">
+    
+    <a href="https://monash.az1.qualtrics.com/jfe/form/SV_bOBdu5y16Rm3uWG" class="box-listing-element shadow-hover" title="MSDI Affiliates Opening Event - Keynote speaker Prof. Derk Loorbach" target="_blank">
+    
+        <span class="box-listing-element__thumb-link">
+            <img src="https://www.monash.edu/__data/assets/image/0020/3425600/MSDI.jpeg" alt="" class="box-listing-element__thumb-image" loading="lazy">
+        </span>
+        <div class="box-listing-element__blurb">
+            <h2 class="box-listing-element__heading">MSDI Affiliates Opening Event - Keynote speaker Prof. Derk Loorbach</h2>
+             <p class="box-listing-element__description">
+                  Event participation: Only for MSDI Affiliates program members, MSDI PhD students and MSDI staff <br>
+                27.11.2023 <br> Monday, 9.30am – 1pm
+                <br>
+                Clayton Campus and Online
+            </p>
+            <p class="box-listing-element__description">MSDI is kicking off its MSDI affiliates event series on Monday, November 27th. The first event is focused on Systems Transformation for Sustainable Development. It will include a keynote from Prof. Derk Loorbach from Erasmus University in The Netherlands. He is a world leader on transition management and works on impact-focussed research and university transformations.</p>
+        </div>
+    </a>
+</div>
+
+<!-- Artificial Intelligence for Law Enforcement and Community Safety (AiLECS) -->
+<div class="col-xs-12 col-sm-4 box-listing-element__wrapper mix Mon Afternoon Staff HDR ECR Researchers Open-for-research Clayton FIT">
+    
+    <a href="https://www.eventbrite.com.au/e/artificial-intelligence-for-law-enforcement-and-community-safety-ailecs-tickets-740573795157?aff=oddtdtcreator" class="box-listing-element shadow-hover" title="Artificial Intelligence for Law Enforcement and Community Safety (AiLECS)" target="_blank">
+    
+        <span class="box-listing-element__thumb-link">
+            <img src="https://www.monash.edu/__data/assets/image/0005/3426458/AI-for-Law.png" alt="" class="box-listing-element__thumb-image" loading="lazy">
+        </span>
+        <div class="box-listing-element__blurb">
+            <h2 class="box-listing-element__heading">Artificial Intelligence for Law Enforcement and Community Safety (AiLECS) - Monday</h2>
+             <p class="box-listing-element__description">
+                Monday, 2 – 2.45pm
+                <br>
+                Front of the entrance to Building 63 at the Lemon-Scented Lawn, Clayton Campus
+            </p>
+            <p class="box-listing-element__description">Discover the collaborative force of the Ai for Law Enforcement and Community Safety (AiLECS) research center, a joint venture between Monash University and the Australian Federal Police. AiLECS researches tools to enhance AFP operational priorities, spanning from countering child exploitation to firearms detection. Ethical and transparent tool deployment is a core focus, promoting community safety. Join our tour to explore AiLECS's streams of work and ongoing projects.</p>
+        </div>
+    </a>
+</div>
+
+<!-- Embodied Visualisation -->
+<div class="col-xs-12 col-sm-4 box-listing-element__wrapper mix Mon Morning Staff HDR ECR Researchers Open-for-research Clayton FIT">
+    
+    <a href="https://www.eventbrite.com.au/e/embodied-visualisation-tickets-740567225507?aff=oddtdtcreator" class="box-listing-element shadow-hover" title="Embodied Visualisation" target="_blank">
+    
+        <span class="box-listing-element__thumb-link">
+            <img src="https://www.monash.edu/__data/assets/image/0007/3427018/data-analytics.png" alt="" class="box-listing-element__thumb-image" loading="lazy">
+        </span>
+        <div class="box-listing-element__blurb">
+            <h2 class="box-listing-element__heading">Embodied Visualisation</h2>
+             <p class="box-listing-element__description">
+                Monday, 10 – 10.45am <br>
+                Monday, 11 – 11.45am
+                <br>
+               Front of the entrance to Building 63, 25 Exhibition Walk, Clayton Campus
+            </p>
+            <p class="box-listing-element__description">We are bringing data out of computers and into the world around us. We've pioneered a research initiative called Immersive Analytics - its promise is to help people to understand and work with complex data and analytical systems in new and more effective ways. Our work explores the potential for new immersive display and interaction technologies – such as large interactive surfaces and augmented and virtual reality – to help people perform data analysis and enhance decision making.</p>
+        </div>
+    </a>
+</div>
+
+<!-- The Inclusivator: Using novel technology to generate social change through research -->
+<div class="col-xs-12 col-sm-4 box-listing-element__wrapper mix Mon Afternoon Staff HDR ECR Researchers Open-for-research Clayton BusEco">
+    
+    <a href="https://www.eventbrite.com.au/e/the-inclusivator-using-novel-technology-to-generate-social-change-through-tickets-740618920127?aff=oddtdtcreator" class="box-listing-element shadow-hover" title="The Inclusivator: Using novel technology to generate social change through research" target="_blank">
+    
+        <span class="box-listing-element__thumb-link">
+            <img src="https://www.monash.edu/__data/assets/image/0020/3431342/banner-feature-box-3.png" alt="" class="box-listing-element__thumb-image" loading="lazy">
+        </span>
+        <div class="box-listing-element__blurb">
+            <h2 class="box-listing-element__heading">The Inclusivator: Using novel technology to generate social change through research</h2>
+             <p class="box-listing-element__description">
+                Monday, 1 – 1.45pm <br>
+                Monday, 2 – 2.45pm
+                <br>
+               Room 111, Building 73, 49 Rainforest Walk, Clayton Campus
+            </p>
+            <p class="box-listing-element__description">This tour will showcase three novel projects being undertaken by Monash Business School’s Opportunity Tech Lab, which brings together business scholars, inclusive design experts, and human-centred technology researchers to solve the grand challenge of social inequity.</p>
+        </div>
+    </a>
+</div>
+
+<!-- Omics-based Discoveries and Genome Modification -->
+<div class="col-xs-12 col-sm-4 box-listing-element__wrapper mix Mon Afternoon Staff HDR ECR Researchers Open-for-research Clayton DVCR(RI)">
+    
+    <a href="https://www.eventbrite.com.au/e/omics-based-discoveries-and-genome-modification-tickets-740613865007?aff=oddtdtcreator" class="box-listing-element shadow-hover" title="Omics-based Discoveries and Genome Modification" target="_blank">
+    
+        <span class="box-listing-element__thumb-link">
+            <img src="https://www.monash.edu/__data/assets/image/0009/3431349/Omics-based-genome-discovery.png" alt="" class="box-listing-element__thumb-image" loading="lazy">
+        </span>
+        <div class="box-listing-element__blurb">
+            <h2 class="box-listing-element__heading">Omics-based Discoveries and Genome Modification</h2>
+             <p class="box-listing-element__description">
+                Monday, 1.30 – 2pm <br>
+                Monday, 2.15 – 2.45pm
+                <br>
+               15 Innovation Walk, Clayton Campus
+            </p>
+            <p class="box-listing-element__description">The "omics' tour will give you insights into how researchers use genomics and proteomics technologies to sequence genomes, edit genomes and identify key biomarkers that could provide greater understanding of disease states.</p>
+        </div>
+    </a>
+</div>
+
+<!-- Inside the Cell and Growing Miniaturised Crystals -->
+<div class="col-xs-12 col-sm-4 box-listing-element__wrapper mix Mon Afternoon Staff HDR ECR Researchers Open-for-research Clayton DVCR(RI)">
+    
+    <a href="https://www.eventbrite.com.au/e/inside-the-cell-and-growing-miniaturised-crystals-tickets-740596121937?aff=oddtdtcreator" class="box-listing-element shadow-hover" title="Inside the Cell and Growing Miniaturised Crystals " target="_blank">
+    
+        <span class="box-listing-element__thumb-link">
+            <img src="https://www.monash.edu/__data/assets/image/0008/3431393/Inside-the-cell.png" alt="" class="box-listing-element__thumb-image" loading="lazy">
+        </span>
+        <div class="box-listing-element__blurb">
+            <h2 class="box-listing-element__heading">Inside the Cell and Growing Miniaturised Crystals</h2>
+             <p class="box-listing-element__description">
+                Monday, 1.30 – 2pm <br>
+                Monday, 2.15 – 2.45pm
+                <br>
+               15 Innovation Walk, Clayton Campus
+            </p>
+            <p class="box-listing-element__description">Look through the lens to see inside the cell and also see how we grow miniaturised crystals on these MMI and MMCP platform tours.</p>
+        </div>
+    </a>
+</div>
+
+<!-- Official Launch of AM2D -->
+<div class="col-xs-12 col-sm-4 box-listing-element__wrapper mix Mon Afternoon Students Community Staff HDR ECR Researchers Clayton">
+    
+    <a href="https://am2d.org/event_launch/" class="box-listing-element shadow-hover" title="Official Launch of AM2D" target="_blank">
+    
+        <span class="box-listing-element__thumb-link">
+            <img src="https://www.monash.edu/__data/assets/image/0006/3450903/AM2D_1.png" alt="" class="box-listing-element__thumb-image" loading="lazy">
+        </span>
+        <div class="box-listing-element__blurb">
+            <h2 class="box-listing-element__heading">Official Launch of AM2D</h2>
+             <p class="box-listing-element__description">
+                Monday, 12 – 2.30pm
+                <br>
+               The Chancellery, <br>27 Chancellor's Walk, Clayton Campus
+            </p>
+            <p class="box-listing-element__description">The ARC Research Hub for Advanced Manufacturing with 2D Materials (AM2D) will be officially launched at an in-person event that celebrates the rich research ecosystem for 2D materials in Australia and between our partners. AM2D will generate world-leading expertise and support local industries to demonstrate industrial applications of 2D materials.</p>
+        </div>
+    </a>
+</div>
+
+<!-- The Business End of Legal Impact -->
+<div class="col-xs-12 col-sm-4 box-listing-element__wrapper mix Mon Afternoon Staff Students Caulfield BusEco">
+    
+    <a href="https://www.eventbrite.com.au/e/the-business-end-of-legal-impact-tickets-747861081627?aff=oddtdtcreator" class="box-listing-element shadow-hover" title="The Business End of Legal Impact" target="_blank">
+    
+        <span class="box-listing-element__thumb-link">
+            <img src="https://www.monash.edu/__data/assets/image/0003/3439731/Business-end-of-legal-impact.png" alt="" class="box-listing-element__thumb-image" loading="lazy">
+        </span>
+        <div class="box-listing-element__blurb">
+            <h2 class="box-listing-element__heading">The Business End of Legal Impact</h2>
+             <p class="box-listing-element__description">
+                Monday, 10 – 11am
+                <br>
+               Monash University Caulfield Campus, The Pavilion,
+               900 Dandenong Road, Caulfield East
+            </p>
+            <p class="box-listing-element__description">Join us for a discussion about the Department of Business Law and Taxation's research impact. A panel of academics will speak about the paths they have found to achieve research impact in the context of law and business law. Our academics will share their experience in the law reform and political process, particularly the achievement of legislative outcomes. They will also discuss how their research has influenced regulatory and other policies and the common law, such as through judicial citation.</p>
+        </div>
+    </a>
+</div>
+
+<!-- Fear on the plank? Virtual but more real! - MBBL Symposium -->
+<div class="col-xs-12 col-sm-4 box-listing-element__wrapper mix Mon Evening Staff Students Online BusEco">
+    
+    <a href="https://www.eventbrite.com.au/e/fear-on-the-plank-virtual-but-more-real-mbbl-symposium-tickets-747860951237?aff=oddtdtcreator" class="box-listing-element shadow-hover" title="Fear on the plank? Virtual but more real! - MBBL Symposium" target="_blank">
+    
+        <span class="box-listing-element__thumb-link">
+            <img src="https://www.monash.edu/__data/assets/image/0009/3439854/Fear-on-the-plank.png" alt="" class="box-listing-element__thumb-image" loading="lazy">
+        </span>
+        <div class="box-listing-element__blurb">
+            <h2 class="box-listing-element__heading">Fear on the plank? Virtual but more real! - MBBL Symposium</h2>
+             <p class="box-listing-element__description">
+                Monday, 8.20 – 8.55pm
+                <br>
+              Online
+            </p>
+            <p class="box-listing-element__description">The Monash Business Behavioural Lab's annual Symposium is on during Research Week. You are welcome to join this session, which is of interest to a general audience. The presentation will be given by Zhongwen Chen</p>
+        </div>
+    </a>
+</div>
+
+<!-- Data Insights from Virtual Worlds - MBBL Symposium -->
+<div class="col-xs-12 col-sm-4 box-listing-element__wrapper mix Mon Evening Staff Students Online BusEco">
+    
+    <a href="https://www.eventbrite.com.au/e/data-insights-from-virtual-worlds-mbbl-symposium-tickets-747860359467?aff=oddtdtcreator" class="box-listing-element shadow-hover" title="Data Insights from Virtual Worlds - MBBL Symposium" target="_blank">
+    
+        <span class="box-listing-element__thumb-link">
+            <img src="https://www.monash.edu/__data/assets/image/0009/3439863/data-insights.png" alt="" class="box-listing-element__thumb-image" loading="lazy">
+        </span>
+        <div class="box-listing-element__blurb">
+            <h2 class="box-listing-element__heading">Data Insights from Virtual Worlds - MBBL Symposium</h2>
+             <p class="box-listing-element__description">
+                Monday, 7.10 – 7.45pm
+                <br>
+              Online
+            </p>
+            <p class="box-listing-element__description">The Monash Business Behavioural Lab's annual Symposium is on during Research Week. You are welcome to join this session, which is of interest to a general audience. The presentation will be given by Professor Charmine Hartel (Buseco) and Dr Paul McIntosh (FIT)</p>
+        </div>
+    </a>
+</div>
+
+<!-- Research Collaboration with Monash University Malaysia -->
+<div class="col-xs-12 col-sm-4 box-listing-element__wrapper mix Mon Afternoon Staff HDR ECR Researchers Community Malaysia Online MUM">
+    
+    <a href="https://www.eventbrite.com.au/e/730298170487?aff=oddtdtcreator" class="box-listing-element shadow-hover" title="Research Collaboration with Monash University Malaysia" target="_blank">
+    
+        <span class="box-listing-element__thumb-link">
+            <img src="https://www.monash.edu/__data/assets/image/0007/1366351/malaysia-campus-buildings-exterior-on-sunny-day-2007.jpg" alt="" class="box-listing-element__thumb-image" loading="lazy">
+        </span>
+        <div class="box-listing-element__blurb">
+            <h2 class="box-listing-element__heading">Research Collaboration with Monash University Malaysia</h2>
+             <p class="box-listing-element__description">
+                Monday, 3 – 4pm (AEDST) <br>
+                Monday, 12 – 1pm (Malaysia Time)
+                <br>
+                Malaysia, Online
+            </p>
+            <p class="box-listing-element__description">This event includes a series of rapid-fire presentations, where you'll learn about Monash University Malaysia (MUM) and the research capabilities and focus areas of each school including, the School of Arts and Social Sciences, School of Business, School of Engineering, School of Information Technology, Jeffrey Cheah School of Medicine and Health Sciences, School of Pharmacy, and School of Science. Additionally, the Research Excellence Unit (REU), Monash Malaysia's central research management unit, will discuss how you can work with their team to build partnerships with MUM researchers.</p>
+        </div>
+    </a>
+</div>
+
+<!-- Commercialisation Masterclass -->
+<div class="col-xs-12 col-sm-4 box-listing-element__wrapper mix Tue Morning Staff Students HDR ECR Researchers Community Clayton INNOVATION">
+    
+    <a href="https://www.eventbrite.com.au/e/commercialisation-masterclass-tickets-730304218577?aff=oddtdtcreator" class="box-listing-element shadow-hover" title="Commercialisation Masterclass" target="_blank">
+    
+        <span class="box-listing-element__thumb-link">
+            <img src="https://www.monash.edu/__data/assets/image/0007/3431437/commercialisation-masterclass.png" alt="" class="box-listing-element__thumb-image" loading="lazy">
+        </span>
+        <div class="box-listing-element__blurb">
+            <h2 class="box-listing-element__heading">Commercialisation Masterclass</h2>
+             <p class="box-listing-element__description">
+                Tuesday, 11am – 12pm
+                <br>
+               The Generator, Building 60, 23 College Walk, Clayton Campus
+            </p>
+            <p class="box-listing-element__description">This exclusive event is tailored for researchers aiming to delve into the realm of commercialisation within Monash University, or those engaged in projects with promising commercial prospects. This insightful Masterclass will explore the  infrasturcture and supports available, and what the commercialisation journey looks like at Monash University.</p>
+        </div>
+    </a>
+</div>
+
+<!-- International School in Artificial Intelligence and its Applications in Computer Science (ISAAC) -->
+<div class="col-xs-12 col-sm-4 box-listing-element__wrapper mix Tue Wed Thu Fri Morning Staff Researchers HDR ECR Community Clayton MDFI">
+    
+    <a href="https://www.monash.edu/it/events/2023/isaac" class="box-listing-element shadow-hover" title="International School in Artificial Intelligence and its Applications in Computer Science (ISAAC)" target="_blank">
+    
+        <span class="box-listing-element__thumb-link">
+            <img src="https://www.monash.edu/__data/assets/image/0008/3425444/schoolofai.jpg" alt="" class="box-listing-element__thumb-image" loading="lazy">
+        </span>
+        <div class="box-listing-element__blurb">
+            <h2 class="box-listing-element__heading">International School in Artificial Intelligence and its Applications in Computer Science (ISAAC)</h2>
+             <p class="box-listing-element__description">
+                21 – 24 November<br>
+                Tuesday - Friday, 10am – 5pm
+                <br>
+                Green Chemical Futures, Level 4 Auditorium, Clayton Campus
+            </p>
+            <p class="box-listing-element__description">Rated ‘five out of five’ for AI in Australia (ERA National Report), Monash Information Technology is proud to host ISAAC, the most exciting graduate school on AI in Australia, in collaboration with the Department of Data Science and Artificial Intelligence, and the Monash Data Futures Institute. During this multi-day academic forum, attendees will gain insights into innovative research developments and their real-world applications in the field of AI, and gain access to a growing network of academics, researchers, and graduate students interested in many aspects of AI.</p>
+        </div>
+    </a>
+</div>
+
+<!-- Heart of research - A tour of the VHI at the Victorian Heart Hospital -->
+<div class="col-xs-12 col-sm-4 box-listing-element__wrapper mix Tue Morning Staff Researchers HDR ECR Community Open-for-research Clayton VHH">
+    
+    <a href="https://www.eventbrite.com.au/e/740627586047?aff=oddtdtcreator" class="box-listing-element shadow-hover" title="Heart of research - A tour of the VHI at the Victorian Heart Hospital" target="_blank">
+    
+        <span class="box-listing-element__thumb-link">
+            <img src="https://www.monash.edu/__data/assets/image/0004/3431470/vhh.png" alt="" class="box-listing-element__thumb-image" loading="lazy">
+        </span>
+        <div class="box-listing-element__blurb">
+            <h2 class="box-listing-element__heading">Heart of research - A tour of the VHI at the Victorian Heart Hospital</h2>
+             <p class="box-listing-element__description">
+                Tuesday, 9 – 11am
+                <br>
+                Victorian Heart Hospital, 631 Blackburn Road, Clayton Campus
+            </p>
+            <p class="box-listing-element__description">Monash University’s Victorian Heart Institute (VHI) is a health and medical research organisation based in Australia's first dedicated cardiac hospital - the Victorian Heart Hospital. It unites multidisciplinary experts from across the Monash landscape to enable excellence in cardiovascular research, education and training, co-located with innovative clinical care delivery by Monash Health.</p>
+        </div>
+    </a>
+</div>
+
+<!-- Action Lab -->
+<div class="col-xs-12 col-sm-4 box-listing-element__wrapper mix Tue Afternoon Staff Researchers HDR ECR Community Open-for-research Clayton FIT">
+    
+    <a href="https://www.eventbrite.com.au/e/action-lab-tickets-740488058717?aff=oddtdtcreator" class="box-listing-element shadow-hover" title="Action Lab" target="_blank">
+    
+        <span class="box-listing-element__thumb-link">
+            <img src="https://www.monash.edu/__data/assets/image/0006/3427044/Actionlab.png" alt="" class="box-listing-element__thumb-image" loading="lazy">
+        </span>
+        <div class="box-listing-element__blurb">
+            <h2 class="box-listing-element__heading">Action Lab</h2>
+             <p class="box-listing-element__description">
+                Tuesday, 1 – 1.50pm (AEDST)
+                <br>
+               Front of the entrance to Building 63 at the Lemon-Scented Lawn, Clayton Campus
+            </p>
+            <p class="box-listing-element__description">Join us to learn from our multidisciplinary teams of researchers committed to driving social innovation through community-centered technology. Action Lab tackles pressing challenges identified by communities, governments, and NGOs, including bushfire resilience, climate change, youth mental health, and women's empowerment. Employing human-centered approaches, we create comprehensive solutions that extend beyond prototypes, benefiting local, national, and international communities.</p>
+        </div>
+    </a>
+</div>
+
+<!-- Research Excellence Framework: Learnings from 10 years of impact assessments -->
+<div class="col-xs-12 col-sm-4 box-listing-element__wrapper mix Tue Morning Staff Researchers HDR ECR Community Online MNHS">
+    
+    <a href="https://www.eventbrite.com.au/e/739330436237?aff=oddtdtcreator" class="box-listing-element shadow-hover" title="Research Excellence Framework: Learnings from 10 years of impact assessments" target="_blank">
+    
+        <span class="box-listing-element__thumb-link">
+            <img src="https://www.monash.edu/__data/assets/image/0006/3425622/research-excellence-framework.jpg" alt="" class="box-listing-element__thumb-image" loading="lazy">
+        </span>
+        <div class="box-listing-element__blurb">
+            <h2 class="box-listing-element__heading">Research Excellence Framework: Learnings from 10 years of impact assessments</h2>
+             <p class="box-listing-element__description">
+                Tuesday, 9 – 10am
+                <br>
+                Online
+            </p>
+            <p class="box-listing-element__description">The UK's Research Excellence Framework (REF) has integrated impact assessment for over a decade, significantly influencing the funding landscape.  This session will explore what lessons we can derive from this experience in the Australian context. It will also explore the emerging trends to be vigilant about in order to maintain a competitive edge and secure international funding.</p>
+        </div>
+    </a>
+</div>
+
+<!-- Monash Centre for Electron Microscopy (MCEM) -->
+<div class="col-xs-12 col-sm-4 box-listing-element__wrapper mix Tue Afternoon Researchers Staff Open-for-research Clayton DVCR(RI)">
+    
+    <a href="https://www.eventbrite.com.au/e/monash-centre-for-electron-microscopy-mcem-tickets-740602420777?aff=oddtdtcreator" class="box-listing-element shadow-hover" title="Monash Centre for Electron Microscopy (MCEM)" target="_blank">
+    
+        <span class="box-listing-element__thumb-link">
+            <img src="https://www.monash.edu/__data/assets/image/0009/3431448/Open-for-Research-Monash-Centre-for-Electron-Microscopy.png" alt="" class="box-listing-element__thumb-image" loading="lazy">
+        </span>
+        <div class="box-listing-element__blurb">
+            <h2 class="box-listing-element__heading">Monash Centre for Electron Microscopy (MCEM)</h2>
+             <p class="box-listing-element__description">
+                Tuesday, 1.30 – 2pm
+                Tuesday, 2.30 – 2.45pm
+                <br>
+                10 Innovation Walk, Clayton Campus
+            </p>
+            <p class="box-listing-element__description">Visit the Monash Centre for Electron Microscopy (MCEM) to see the world’s most powerful electron microscopes in action. See atoms live!</p>
+        </div>
+    </a>
+</div>
+
+<!-- Monash Media Lab  -->
+<div class="col-xs-12 col-sm-4 box-listing-element__wrapper mix Tue Afternoon Researchers HDR ECR Staff Open-for-research ARTS Caulfield">
+    
+    <a href="https://www.eventbrite.com.au/e/monash-media-lab-tickets-740611728617?aff=oddtdtcreator" class="box-listing-element shadow-hover" title="Monash Media Lab" target="_blank">
+    
+        <span class="box-listing-element__thumb-link">
+            <img src="https://www.monash.edu/__data/assets/image/0003/3431460/Monash-Media-Lab-.png" alt="" class="box-listing-element__thumb-image" loading="lazy">
+        </span>
+        <div class="box-listing-element__blurb">
+            <h2 class="box-listing-element__heading">Monash Media Lab </h2>
+             <p class="box-listing-element__description">
+                Tuesday, 2 – 3pm
+                <br>
+                Monash Media Labs, Building B (502) Caulfield Campus
+            </p>
+            <p class="box-listing-element__description">Tour the broadcast TV and video production studio and control room, three radio studios, eight editing suites, open plan newsroom and iMac teaching laboratories, plus student commons rooms and portable equipment loans store.</p>
+        </div>
+    </a>
+</div>
+
+<!-- Monash Law Future Courts Research Platform  -->
+<div class="col-xs-12 col-sm-4 box-listing-element__wrapper mix Tue Morning Researchers HDR ECR Staff Community Open-for-research Clayton LAW">
+    
+    <a href="https://www.eventbrite.com.au/e/monash-law-future-courts-research-platform-tickets-743946513047?aff=oddtdtcreator" class="box-listing-element shadow-hover" title="Monash Law Future Courts Research Platform" target="_blank">
+    
+        <span class="box-listing-element__thumb-link">
+            <img src="https://www.monash.edu/__data/assets/image/0009/3435930/Court.png" alt="" class="box-listing-element__thumb-image" loading="lazy">
+        </span>
+        <div class="box-listing-element__blurb">
+            <h2 class="box-listing-element__heading">Monash Law Future Courts Research Platform</h2>
+             <p class="box-listing-element__description">
+                Tuesday, 10 - 10.45am
+                <br>
+                Moot Court, Ground Floor, Law Building, <br> 15 Ancora Imparo Way, Clayton Campus
+            </p>
+            <p class="box-listing-element__description">Your visit to the Monash Future Courts Platform will be hosted by Assoc Prof Jacqui Horan, lead courtroom researcher who will showcase our $4 million multi-functional and state-of-the-art moot court. As well as enabling state-of-the-art teaching facilities for a modern legal education, the Future Courts Research Platform supports and enables a wide variety of research subjects and projects based on the impact of technology on the court and legal system. The research priorities that Future Courts supports include: court technology, the jury system, court architecture and design, court processes and expert evidence. Come and see one of the only HASS-based research facilities at Monash University. The Court is wheelchair accessible. No food or drink is allowed in the Court.</p>
+        </div>
+    </a>
+</div>
+
+
+<!-- Monash Future Lab and Xray Platform  -->
+<div class="col-xs-12 col-sm-4 box-listing-element__wrapper mix Tue Afternoon Researchers HDR ECR Staff Community Open-for-research Clayton DVCR(RI)">
+    
+    <a href="https://www.eventbrite.com.au/e/open-for-research-monash-future-lab-and-xray-platform-tickets-744756736447?aff=oddtdtcreator" class="box-listing-element shadow-hover" title="Monash Future Lab and Xray Platform" target="_blank">
+    
+        <span class="box-listing-element__thumb-link">
+            <img src="https://www.monash.edu/__data/assets/image/0005/3436790/xray.png" alt="" class="box-listing-element__thumb-image" loading="lazy">
+        </span>
+        <div class="box-listing-element__blurb">
+            <h2 class="box-listing-element__heading">Monash Future Lab and Xray Platform</h2>
+             <p class="box-listing-element__description">
+                Tuesday, 1.30 - 2pm <br>
+                Tuesday, 2.15 - 2.45pm
+                <br>
+                New Horizons Building (ground floor, in front of the lifts) 20 Research Way, Clayton
+            </p>
+            <p class="box-listing-element__description">Solving energy challenges and materials characterisation, now and into the future. This tour will visit two research facilities, the Monash Future Lab and the Monash Xray Platform. The Monash FutureLab is a globally-connected innovation hub that supports technological innovation and collaboration in material engineering, additive manufacturing, data science and IT. By working with researchers, entrepreneurs, subject-matter experts and parallel leading industries, FutureLab aims to solve industry challenges and create shared opportunities. Monash FutureLab encourages blue-sky thinking. The MXP is one of the largest in-house X-ray instrument facilities in Victoria, supporting innovation across multiple disciplines, including in the design of materials for industrial, environmental and biomedical applications and development of green technologies and processes for energy production and mining.</p>
+        </div>
+    </a>
+</div>
+
+<!-- Transforming Indonesia: Tackling contemporary challenges through transdisciplinary impact driven research -->
+<div class="col-xs-12 col-sm-4 box-listing-element__wrapper mix Tue Morning Afternoon Staff Researchers ECR HDR Community Indonesia Online MI">
+    
+    <a href="https://www.eventbrite.com.au/e/transforming-indonesia-tackling-contemporary-challenges-tickets-730315963707?aff=oddtdtcreator" class="box-listing-element shadow-hover" title="Transforming Indonesia: Tackling contemporary challenges through transdisciplinary impact driven research" target="_blank">
+    
+        <span class="box-listing-element__thumb-link">
+            <img src="https://www.monash.edu/__data/assets/image/0003/3425637/feature-indonesia-campus-08.jpg" alt="" class="box-listing-element__thumb-image" loading="lazy">
+        </span>
+        <div class="box-listing-element__blurb">
+            <h2 class="box-listing-element__heading">Transforming Indonesia: Tackling contemporary challenges through transdisciplinary impact driven research</h2>
+             <p class="box-listing-element__description">
+                Tuesday, 2 – 3pm (AEDST)
+                <br>
+                Tuesday, 10 – 11am (Indonesia)
+                <br>
+                Alex Lechner, Monash Indonesia and online
+            </p>
+            <p class="box-listing-element__description">Monash University Indonesia (MI) is thrilled to invite researchers from across the Monash campus network to learn more about how our researchers are tackling pressing contemporary Indonesian and global issues. During this hybrid event, we will spotlight groundbreaking research initiatives at Monash Indonesia that are making significant strides in tackling Indonesia's most urgent societal and environmental concerns. From sustainable development and climate resilience to healthcare access and cultural preservation, we are building a transdisciplinary and impact-driven research pipeline. This event is an open invitation for researchers across Monash to learn more about MI, connect, exchange ideas, and forge partnerships.
+</p>
+        </div>
+    </a>
+</div>
+
+<!-- Understanding research assessment and funding - research classification systems, HERDC, research block grants, research metrics including altmetrics, and EI -->
+<div class="col-xs-12 col-sm-4 box-listing-element__wrapper mix Fri Afternoon Staff Researchers HDR ECR Community PPS Parkville Online">
+    
+    <a href="https://www.eventbrite.com.au/e/understanding-research-assessment-and-funding-tickets-730310015917?aff=oddtdtcreator" class="box-listing-element shadow-hover" title="Understanding research assessment and funding - research classification systems, HERDC, research block grants, research metrics including altmetrics, and EI" target="_blank">
+    
+        <span class="box-listing-element__thumb-link">
+            <img src="https://www.monash.edu/__data/assets/image/0011/3435365/Understanding-research-assessment-and-funding.png" alt="" class="box-listing-element__thumb-image" loading="lazy">
+        </span>
+        <div class="box-listing-element__blurb">
+            <h2 class="box-listing-element__heading">Understanding research assessment and funding - research classification systems, HERDC, research block grants, research metrics including altmetrics, and EI</h2>
+             <p class="box-listing-element__description">
+                Friday, 10 – 11am
+                <br>
+               Monash University, 381 Royal Parade, Parkville Campus (LT1) and Online
+            </p>
+            <p class="box-listing-element__description">Join us to understand research assessment, ranking systems and the funding drivers for research. Speaker will discuss the ANZ Standard Research Classification; Higher Education Research Data Collection; research metrics like FWCI, H-index, altmetrics; and engagement and impact assessment. Gain insights into how these frameworks shape research assessment, funding allocation, and evaluation of research impact.</p>
+        </div>
+    </a>
+</div>
+
+<!-- ARC grant processes: A panel of recent ARC College of Experts members discuss their experiences -->
+<div class="col-xs-12 col-sm-4 box-listing-element__wrapper mix Wed Morning Staff Researchers HDR ECR Clayton SCI">
+    
+    <a href="https://www.eventbrite.com.au/e/730340406817?aff=oddtdtcreator" class="box-listing-element shadow-hover" title="ARC grant processes: A panel of recent ARC College of Experts members discuss their experiences" target="_blank">
+    
+        <span class="box-listing-element__thumb-link">
+            <img src="https://www.monash.edu/__data/assets/image/0010/3431575/ARC-grant-processes-A-panel-of-recent-ARC-College-of-Experts-members-discuss-their-experiences.png" alt="" class="box-listing-element__thumb-image" loading="lazy">
+        </span>
+        <div class="box-listing-element__blurb">
+            <h2 class="box-listing-element__heading">ARC grant processes: A panel of recent ARC College of Experts members discuss their experiences</h2>
+             <p class="box-listing-element__description">
+                Wednesday, 11am – 1pm
+                <br>
+                S1 lecture theatre, 16 Rainforest Walk, Clayton Campus
+            </p>
+            <p class="box-listing-element__description">Three recent ARC College of Experts members will answer questions related to their experience evaluating grant proposals across Australia.  In this engaging session, our experts will delve into the intricacies of the evaluation process, discussing the timelines, challenges, and successes they've encountered. Gain a deeper understanding of what sets a grant proposal apart and how to increase your chances of success in securing research funding. Don't miss this exceptional opportunity to learn from seasoned professionals and enhance your grant proposal skills.</p>
+        </div>
+    </a>
+</div>
+
+<!-- Assistive Technology Lunch and Learn -->
+<div class="col-xs-12 col-sm-4 box-listing-element__wrapper mix Wed Afternoon Staff Researchers HDR ECR Clayton FIT">
+    
+    <a href="https://www.eventbrite.com.au/e/assistive-technology-lunch-and-learn-tickets-730322252517?aff=oddtdtcreator" class="box-listing-element shadow-hover" title="Assistive Technology Lunch and Learn" target="_blank">
+    
+        <span class="box-listing-element__thumb-link">
+            <img src="https://www.monash.edu/__data/assets/image/0011/3425654/assistive-technology-thumbnail.jpg" alt="" class="box-listing-element__thumb-image" loading="lazy">
+        </span>
+        <div class="box-listing-element__blurb">
+            <h2 class="box-listing-element__heading">Assistive Technology Lunch and Learn</h2>
+             <p class="box-listing-element__description">
+                Wednesday, 12.30 – 1.30pm
+                <br>
+               IT building, 25 Exhibition Walk on the ground floor in the MATS centre area, Clayton Campus
+            </p>
+            <p class="box-listing-element__description">Experience an engaging event where Professor Kim Marriott will be your guide on a journey through the latest advancements in technology, specifically created to enhance the lives of individuals with disabilities. Prepare for an insightful glimpse into the future of assistive technology. <br> Join us for a lunchtime and learning session on Assistive Technology! Lunch not provided, please being your own. Thank you</p>
+        </div>
+    </a>
+</div>
+
+<!-- Bootcamp -  Publish for impact - Identify quality journals in your discipline -->
+<div class="col-xs-12 col-sm-4 box-listing-element__wrapper mix Wed Afternoon Staff Researchers HDR ECR Online LIB">
+    
+    <a href="https://www.eventbrite.com.au/e/bootcamp-publish-for-impact-tickets-730323696837?aff=oddtdtcreator" class="box-listing-element shadow-hover" title="Bootcamp -  Publish for impact - Identify quality journals in your discipline" target="_blank">
+    
+        <span class="box-listing-element__thumb-link">
+            <img src="https://www.monash.edu/__data/assets/image/0007/3423634/Publish-for-Impact.png" alt="" class="box-listing-element__thumb-image" loading="lazy">
+        </span>
+        <div class="box-listing-element__blurb">
+            <h2 class="box-listing-element__heading">Bootcamp -  Publish for impact - Identify quality journals in your discipline</h2>
+             <p class="box-listing-element__description">
+                Wednesday, 1 – 1.30pm
+                <br>
+                Online
+            </p>
+            <p class="box-listing-element__description">Focusing on top-tier journals within your field can significantly enhance the visibility, citation, and influence of your research and publications. In this hands-on session, we'll guide you in using Web of Science to pinpoint suitable journals. You'll delve into journal metrics, including citation reports and journal quartiles to gauge a journal's impact in your discipline. By the session's conclusion, you'll have compiled an initial list of reputable journals pertinent to your area of study, offering valuable options for submitting your upcoming publications.</p>
+        </div>
+    </a>
+</div>
+
+<!-- Bootcamp - Unethical publishers - techniques for identifying predatory publishers -->
+<div class="col-xs-12 col-sm-4 box-listing-element__wrapper mix Wed Afternoon Staff Researchers HDR ECR Online LIB">
+    
+    <a href="https://www.eventbrite.com.au/e/bootcamp-unethical-publishers-tickets-730323215397?aff=oddtdtcreator" class="box-listing-element shadow-hover" title="Bootcamp - Unethical publishers - techniques for identifying predatory publishers" target="_blank">
+    
+        <span class="box-listing-element__thumb-link">
+            <img src="https://www.monash.edu/__data/assets/image/0010/3423628/Bootcamp-Unethical-publishers.png" alt="" class="box-listing-element__thumb-image" loading="lazy">
+        </span>
+        <div class="box-listing-element__blurb">
+            <h2 class="box-listing-element__heading">Bootcamp - Unethical publishers - techniques for identifying predatory publishers</h2>
+             <p class="box-listing-element__description">
+                Wednesday, 12 – 12.30pm
+                <br>
+                Online
+            </p>
+            <p class="box-listing-element__description">Researchers often receive invitations to submit articles or attend conferences. Some are legitimate, but many come from unscrupulous publishers lacking peer review, charging exorbitant fees, or mimicking reputable titles. This session equips you with tools to spot 'red flags' signaling unethical publishers. Using Cabell’s Predatory Reports and Think Check Submit, you'll practice discerning trustworthy journals from potentially predatory ones.</p>
+        </div>
+    </a>
+</div>
+
+<!-- Diverse PhD Pathways: Embracing the Potential of Your PhD -->
+<div class="col-xs-12 col-sm-4 box-listing-element__wrapper mix Wed Evening HDR Researchers ECR Clayton Online DVCR">
+    
+    <a href="https://www.eventbrite.com.au/e/in-person-diverse-phd-pathways-embracing-the-potential-of-your-phd-tickets-730332402877?aff=oddtdtcreator" class="box-listing-element shadow-hover" title="Diverse PhD Pathways: Embracing the Potential of Your PhD" target="_blank">
+    
+        <span class="box-listing-element__thumb-link">
+            <img src="https://www.monash.edu/__data/assets/image/0010/3445192/1.png" alt="" class="box-listing-element__thumb-image" loading="lazy">
+        </span>
+        <div class="box-listing-element__blurb">
+            <h2 class="box-listing-element__heading">Diverse PhD Pathways: Embracing the Potential of Your PhD</h2>
+             <p class="box-listing-element__description">
+                <br>
+                Wednesday, 5 – 7.30pm <br>
+                Woodside Building  LG.02, 20 Exhibition Walk, Clayton Campus and Online
+            </p>
+            <p class="box-listing-element__description">A transformative event to broaden your perspective on the potential career pathways that the PhD makes possible. This event aims to shed light on the myriad career paths that your doctoral degree can lead you to and the powerful impact that you can make. The session includes a keynote address from Colin White, as well as a panel of respected Monash alumni whose post-PhD journey has led them to unexpected places.</p>
+        </div>
+    </a>
+</div>
+
+<!-- Faculty of Arts Health and Wellbeing Research Showcase: Community Informed and Ethically Focused Health, Medical and Wellbeing Interventions -->
+<div class="col-xs-12 col-sm-4 box-listing-element__wrapper mix Wed Morning Staff Researchers HDR ECR Clayton ARTS">
+    
+    <a href="https://www.eventbrite.com.au/e/faculty-of-arts-health-and-wellbeing-research-showcase-tickets-730320005797?aff=oddtdtcreator" class="box-listing-element shadow-hover" title="Faculty of Arts Health and Wellbeing Research Showcase: Community Informed and Ethically Focused Health, Medical and Wellbeing Interventions" target="_blank">
+    
+        <span class="box-listing-element__thumb-link">
+            <img src="https://www.monash.edu/__data/assets/image/0004/3435286/Healthandwellbeingshowcase.png" alt="" class="box-listing-element__thumb-image" loading="lazy">
+        </span>
+        <div class="box-listing-element__blurb">
+            <h2 class="box-listing-element__heading">Faculty of Arts Health and Wellbeing Research Showcase: Community Informed and Ethically Focused Health, Medical and Wellbeing Interventions</h2>
+             <p class="box-listing-element__description">
+                Wednesday, 9am – 4pm
+                <br>
+               Performing Arts Centre Foyer/Auditorium, 48 Exhibition Walk, Clayton Campus
+            </p>
+            <p class="box-listing-element__description">A networking and showcase event with key health, medical and wellbeing researchers from the Faculty of Arts, and industry and community partners. It will give examples of the diverse health and wellbeing research conducted with industry and community partners and the faculty’s growing capacity in this area. The event will highlight how a humanities and social sciences perspective can contribute to health and medical research and lead to improved practices for partners, Australian communities and the region.</p>
+        </div>
+    </a>
+</div>
+
+<!-- Imaging, flow cytometry and analysis facilities at the Monash Institute of Pharmaceutical Sciences -->
+<div class="col-xs-12 col-sm-4 box-listing-element__wrapper mix Tue Afternoon Staff Researchers HDR ECR Community Parkville Online PPS">
+    
+    <a href="https://www.eventbrite.com.au/e/monash-institute-of-pharmaceutical-sciences-tickets-730324569447?aff=oddtdtcreator" class="box-listing-element shadow-hover" title="Imaging, flow cytometry and analysis facilities at the Monash Institute of Pharmaceutical Sciences" target="_blank">
+    
+        <span class="box-listing-element__thumb-link">
+            <img src="https://www.monash.edu/__data/assets/image/0011/3423638/Imaging,-flow-cytometry-and-analysis-facilities-at-the-Monash-institute-of-Pharmaceutical-Sciences.png" alt="" class="box-listing-element__thumb-image" loading="lazy">
+        </span>
+        <div class="box-listing-element__blurb">
+            <h2 class="box-listing-element__heading">Imaging, flow cytometry and analysis facilities at the Monash Institute of Pharmaceutical Sciences</h2>
+             <p class="box-listing-element__description">
+                Tuesday, 1 – 2pm
+                <br>
+                Building 404, 399 Royal Parade , Parkville, and Online
+            </p>
+            <p class="box-listing-element__description">Hear from Monash Institute of Pharmaceutical Sciences researchers about the cutting-edge imaging, flow cytometry, and analysis facilities. Attendees are strongly encouraged to book a facility tour at MIPS after this one-hour presentation.</p>
+        </div>
+    </a>
+</div>
+
+<!-- Tour of the cutting-edge imaging, flow cytometry, and analysis facilities -->
+<div class="col-xs-12 col-sm-4 box-listing-element__wrapper mix Tue Afternoon Staff Researchers HDR ECR Community Open-for-research Parkville PPS">
+    
+    <a href="https://www.eventbrite.com.au/e/open-for-research-tour-of-the-monash-institute-of-pharmaceutical-sciences-tickets-741420377307?aff=oddtdtcreator" class="box-listing-element shadow-hover" title="Tour of the cutting-edge imaging, flow cytometry, and analysis facilities" target="_blank">
+    
+        <span class="box-listing-element__thumb-link">
+            <img src="https://www.monash.edu/__data/assets/image/0004/3430534/MIPS.jpg" alt="" class="box-listing-element__thumb-image" loading="lazy">
+        </span>
+        <div class="box-listing-element__blurb">
+            <h2 class="box-listing-element__heading">Tour of the cutting-edge imaging, flow cytometry, and analysis facilities</h2>
+             <p class="box-listing-element__description">
+                Tuesday, 2.15 - 3pm
+                <br>
+                Monash Institute of Pharmaceutical Sciences, Building 404, 399 Royal Parade, Parkville Campus
+            </p>
+            <p class="box-listing-element__description">Explore our state-of-the-art campus platform and get an up-close look at the advanced technologies and equipment available for research and innovation in the field.  Max capacity is 24 people for this guided visit of the cutting-edge imaging, flow cytometry, and analysis facilities at the Monash Institute of Pharmaceutical Sciences.</p>
+        </div>
+    </a>
+</div>
+
+<!-- AquaCore - Australian Regenerative Medicine Institute (ARMI) -->
+<div class="col-xs-12 col-sm-4 box-listing-element__wrapper mix Wed Afternoon Staff Researchers HDR ECR Open-for-research Clayton DVCR(RI)">
+    
+    <a href="https://www.eventbrite.com.au/e/aquacore-australian-regenerative-medicine-institute-armi-tickets-740471739907?aff=oddtdtcreator" class="box-listing-element shadow-hover" title="AquaCore - Australian Regenerative Medicine Institute (ARMI)" target="_blank">
+    
+        <span class="box-listing-element__thumb-link">
+            <img src="https://www.monash.edu/__data/assets/image/0006/3433245/Aquacore.png" alt="" class="box-listing-element__thumb-image" loading="lazy">
+        </span>
+        <div class="box-listing-element__blurb">
+            <h2 class="box-listing-element__heading">AquaCore - Australian Regenerative Medicine Institute (ARMI)</h2>
+             <p class="box-listing-element__description">
+                Wednesday, 1.30 - 3pm <br>
+                Wednesday, 2.15 - 3.45pm
+                <br>
+                18 Innovation Walk, Clayton Campus
+            </p>
+            <p class="box-listing-element__description">Visit one of the leading labs at the forefront of regenerative medicine and stem cell research. The tour will visit ARMI's AquaCore facility, where reef sharks and salamanders allow new insights into the mechanisms of regeneration.</p>
+        </div>
+    </a>
+</div>
+
+<!-- Open for Research: Bee Pavilion -->
+<div class="col-xs-12 col-sm-4 box-listing-element__wrapper mix Wed Morning Staff Researchers HDR ECR Community Open-for-research Clayton FIT">
+    
+    <a href="https://www.eventbrite.com.au/e/bee-pavillion-tickets-740528910907?aff=oddtdtcreator" class="box-listing-element shadow-hover" title="Bee Pavilion" target="_blank">
+    
+        <span class="box-listing-element__thumb-link">
+            <img src="https://www.monash.edu/__data/assets/image/0007/3423679/beepavilion.png" alt="" class="box-listing-element__thumb-image" loading="lazy">
+        </span>
+        <div class="box-listing-element__blurb">
+            <h2 class="box-listing-element__heading">Bee Pavilion</h2>
+             <p class="box-listing-element__description">
+                Wednesday, 10.30 - 11.20am
+                <br>
+                Front of the entrance to Building 63 at the Lemon-Scented Lawn, 25 Exhibition Walk, Clayton Campus
+            </p>
+            <p class="box-listing-element__description">Led by Associate Professor Alan Dorin, the NativeBee+ Tech Facility harnesses AI, data science, computer vision and simulation to develop new technology that monitors, simulates and improves our understanding and management of insect-plant interactions. Insect pollinators directly contribute to 34% of global food production – approximately AUD$238 billion per year. Even the tiniest drops of pollinator abundance or efficiency can cause production losses that have the potential to undermine global food security. Similarly, insect pests cause billions of dollars of crop loss annually. As the climate changes and humans spread invasive species around the globe, these issues concerning the interactions betweeen insects and plants are becoming increasingly important tackle in agriculture, and in biodiversity conservation. Integrating computer science, ecology, entomology, engineering and agriculture, this climate-controlled and digitally-wired facility is home to Australian native insect species. Here the Facility staff and students research, design and test monitoring, simulation and management tools for the good of the planet’s natural and agricultural ecosystems.</p>
+        </div>
+    </a>
+</div>
+
+<!-- Melbourne Centre for Nanofabrication -->
+<div class="col-xs-12 col-sm-4 box-listing-element__wrapper mix Wed Morning Staff Researchers HDR ECR Open-for-research Clayton DVCR(RI)">
+    
+    <a href="https://www.eventbrite.com.au/e/melbourne-centre-for-nanofabrication-tickets-740616332387?aff=oddtdtcreator" class="box-listing-element shadow-hover" title="Melbourne Centre for Nanofabrication" target="_blank">
+    
+        <span class="box-listing-element__thumb-link">
+            <img src="https://www.monash.edu/__data/assets/image/0011/3435482/nanofabrication.png" alt="" class="box-listing-element__thumb-image" loading="lazy">
+        </span>
+        <div class="box-listing-element__blurb">
+            <h2 class="box-listing-element__heading">Melbourne Centre for Nanofabrication</h2>
+             <p class="box-listing-element__description">
+                Wednesday, 9.30 - 10.30am
+                <br>
+                151 Wellington Road, Clayton Campus
+            </p>
+            <p class="box-listing-element__description">The MCN is a world-class nanofabrication centre, combining cutting-edge technologies with the knowledge and skills of expert process engineers. Join this tour for an insightful nanotechnology experience.</p>
+        </div>
+    </a>
+</div>
+
+<!-- Monash Centre for Additive Manufacturing -->
+<div class="col-xs-12 col-sm-4 box-listing-element__wrapper mix Wed Morning Staff Researchers HDR ECR Open-for-research Clayton DVCR(RI)">
+    
+    <a href="https://www.eventbrite.com.au/e/monash-centre-for-additive-manufacturing-tickets-740600705647?aff=oddtdtcreator" class="box-listing-element shadow-hover" title="Monash Centre for Additive Manufacturing" target="_blank">
+    
+        <span class="box-listing-element__thumb-link">
+            <img src="https://www.monash.edu/__data/assets/image/0005/3433280/Monash-Centre-for-Additive-Manufacturing.png" alt="" class="box-listing-element__thumb-image" loading="lazy">
+        </span>
+        <div class="box-listing-element__blurb">
+            <h2 class="box-listing-element__heading">Monash Centre for Additive Manufacturing</h2>
+             <p class="box-listing-element__description">
+                Wednesday, 9.30 - 10.30am
+                <br>
+                15-17 Normanby Road Notting Hill, VIC 3168
+            </p>
+            <p class="box-listing-element__description">Additive manufacturing is the next revolution in manufacturing, making it possible to answer old challenges and create innovative solutions. The process of additive manufacturing ‘prints’ new components layer by layer. This technology uses metal and alloy powder to build components in layers not much wider than a human hair. It allows creation of components with new designs and complex geometries that were near impossible to make by traditional forms of manufacturing.The tour to Monash Centre for Additive Manufacturing will take you into the facility to watch how metal powders are turned into metal components. See the first 3D printed jet engine and other parts and components used in the aerospace, defence and biomedical industries.</p>
+        </div>
+    </a>
+</div>
+
+<!-- Research Professionals at Monash (RPM) Complex decision making workshop and End-of-Year Celebration -->
+<div class="col-xs-12 col-sm-4 box-listing-element__wrapper mix Wed Afternoon Staff Community Clayton DVCR">
+    
+    <a href="https://www.eventbrite.com.au/e/739348008797?aff=oddtdtcreator" class="box-listing-element shadow-hover" title="Research Professionals at Monash (RPM) Complex decision making workshop and End-of-Year Celebration" target="_blank">
+    
+        <span class="box-listing-element__thumb-link">
+            <img src="https://www.monash.edu/__data/assets/image/0005/3433424/RPM.png" alt="" class="box-listing-element__thumb-image" loading="lazy">
+        </span>
+        <div class="box-listing-element__blurb">
+            <h2 class="box-listing-element__heading">Research Professionals at Monash (RPM) Complex decision making workshop and End-of-Year Celebration</h2>
+             <p class="box-listing-element__description">
+                Wednesday, 2 - 5pm
+                <br>
+               David Li Sound Gallery, 48 Exhibition Walk, Clayton Campus
+            </p>
+            <p class="box-listing-element__description">Engage in a Complex decision making workshop with senior leaders from across Monash followed by a celebration acknowledging the valuable contributions of research professionals at Monash University. This event serves as a platform to nurture a robust sense of community among research professionals spanning campuses, centers, faculties, and institutes within Monash.</p>
+        </div>
+    </a>
+</div>
+
+<!-- The Australian Youth Barometer: building engagement and impact with governments -->
+<div class="col-xs-12 col-sm-4 box-listing-element__wrapper mix Wed Afternoon Staff Researchers HDR ECR Community Online EDU">
+    
+    <a href="https://www.eventbrite.com.au/e/the-australian-youth-barometer-building-engagement-tickets-730328390877?aff=oddtdtcreator" class="box-listing-element shadow-hover" title="The Australian Youth Barometer: building engagement and impact with governments" target="_blank">
+    
+        <span class="box-listing-element__thumb-link">
+            <img src="https://www.monash.edu/__data/assets/image/0010/1314001/learning-and-teaching-building-student-thoroughfare-2018.jpg" alt="" class="box-listing-element__thumb-image" loading="lazy">
+        </span>
+        <div class="box-listing-element__blurb">
+            <h2 class="box-listing-element__heading">The Australian Youth Barometer: building engagement and impact with governments</h2>
+             <p class="box-listing-element__description">
+                Wednesday, 1 – 2pm
+                <br>
+                Online
+            </p>
+            <p class="box-listing-element__description">Professor Lucas Walsh, director of the Centre for Youth Policy and Education Practice, will talk about the Australian Youth Barometer and how he has used the barometer strategically to build engagement with key policy makers in state and commonwealth governments.</p>
+        </div>
+    </a>
+</div>
+
+<!-- What Will Responsible Research Look like in 2028? -->
+<div class="col-xs-12 col-sm-4 box-listing-element__wrapper mix Wed Afternoon Staff Students HDR ECR Community Researchers Caulfield DVCR">
+    
+    <a href="https://www.eventbrite.com.au/e/what-will-responsible-research-look-like-in-2028-tickets-747947811037?aff=oddtdtcreator" class="box-listing-element shadow-hover" title="What Will Responsible Research Look like in 2028?" target="_blank">
+    
+        <span class="box-listing-element__thumb-link">
+            <img src="https://www.monash.edu/__data/assets/image/0003/3439551/what-will-responsible-research-look-like-in-2028.png" alt="" class="box-listing-element__thumb-image" loading="lazy">
+        </span>
+        <div class="box-listing-element__blurb">
+            <h2 class="box-listing-element__heading">What Will Responsible Research Look like in 2028?</h2>
+             <p class="box-listing-element__description">
+                Wednesday, 12 - 1.30pm
+                <br>
+                G1.21, Building G, Caulfield Campus
+            </p>
+            <p class="box-listing-element__description">This hands-on futures workshop plays with the idea that our research culture shapes our research practices, and the way we practice shapes our culture. If we want to create a thriving responsible research culture, we need first to imagine what that might look like.</p>
+        </div>
+    </a>
+</div>
+
+<!-- HumaniSE -->
+<div class="col-xs-12 col-sm-4 box-listing-element__wrapper mix Wed Afternoon Staff Researchers HDR ECR Community Online Open-for-research FIT">
+    
+    <a href="https://www.eventbrite.com.au/e/humanise-tickets-741829741727?aff=oddtdtcreator" class="box-listing-element shadow-hover" title="HumaniSE" target="_blank">
+    
+        <span class="box-listing-element__thumb-link">
+            <img src="https://www.monash.edu/__data/assets/image/0009/3433536/HumanISE.png" alt="" class="box-listing-element__thumb-image" loading="lazy">
+        </span>
+        <div class="box-listing-element__blurb">
+            <h2 class="box-listing-element__heading">HumaniSE</h2>
+             <p class="box-listing-element__description">
+                Wednesday, 2 – 2.45pm
+                <br>
+                AG03, 7 Innovation Walk, Clayton Campus
+            </p>
+            <p class="box-listing-element__description">Led by Australian Laureate Fellow, Professor John Grundy, we use our knowledge in software engineering to put humans and their needs centre-stage. We're enhancing best practices by inventing new approaches and tools to capture diverse stakeholder requirements essential to the success of software. We focus testing human-centric aspects and revising techniques for receiving in-depth feedback to ensure that software meets the needs of its users. Come and learn about the diverse projects we’re working on today – to create a lasting impact tomorrow.</p>
+        </div>
+    </a>
+</div>
+
+<!-- Respectful research cultures: Preventing and Reducing Sexual Harassment -->
+<div class="col-xs-12 col-sm-4 box-listing-element__wrapper mix Wed Morning Staff Students Clayton">
+    
+    <a href="https://www.eventbrite.com.au/e/sexual-harassment-in-research-settings-tickets-745746065557?aff=oddtdtcreator" class="box-listing-element shadow-hover" title="Respectful research cultures: Preventing and Reducing Sexual Harassment" target="_blank">
+    
+        <span class="box-listing-element__thumb-link">
+            <img src="https://www.monash.edu/__data/assets/image/0009/3425823/Sexual-Harassment-in-Research-Settings.png" alt="" class="box-listing-element__thumb-image" loading="lazy">
+        </span>
+        <div class="box-listing-element__blurb">
+            <h2 class="box-listing-element__heading">Respectful research cultures: Preventing and Reducing Sexual Harassment</h2>
+             <p class="box-listing-element__description">
+                Wednesday, 10.30am – 12pm
+                <br>
+               The Chancellery Room, <br> 27 Chancellor's Walk, Clayton Campus
+            </p>
+            <p class="box-listing-element__description">We all have a right to feel safe and supported to enable successful research for sustained and positive impact. Unfortunately, sexual discrimination and harassment continue to be significant issues in research settings, as highlighted in the Federal Government's 2020 Respect@Work report, the Monash Gender and Family Violence Prevention Centre’s Workplace Sexual Harassment Study and the 2023 NTEU survey on sexual harassment in universities. BUT – we can work together to make change. Join us for a panel discussion featuring senior research leaders and community support professionals, discussing how we can all prevent and reduce the incidence of sexual harassment for safer, collaborative and high-impact research cultures. </p>
+        </div>
+    </a>
+</div>
+
+<!-- Equity, Diversity & Inclusion Research Network Launch -->
+<div class="col-xs-12 col-sm-4 box-listing-element__wrapper mix Wed Afternoon Staff Students Clayton DVCR">
+    
+    <a href="https://www.eventbrite.com.au/e/equity-diversity-inclusion-research-network-launch-tickets-747888272957?aff=oddtdtcreator" class="box-listing-element shadow-hover" title="Equity, Diversity & Inclusion Research Network Launch" target="_blank">
+    
+        <span class="box-listing-element__thumb-link">
+            <img src="https://www.monash.edu/__data/assets/image/0004/3433945/Equity-Diversity-Inclusion.png" alt="" class="box-listing-element__thumb-image" loading="lazy">
+        </span>
+        <div class="box-listing-element__blurb">
+            <h2 class="box-listing-element__heading">Equity, Diversity & Inclusion Research Network Launch</h2>
+             <p class="box-listing-element__description">
+                Wednesday, 12 – 1pm
+                <br> Chancellery Building, Atrium<br>
+27 Chancellors Walk, Clayton Campus
+            </p>
+            <p class="box-listing-element__description">Building on the success of the Equity, Diversity and Inclusion (EDI) Community of Practice established in 2023, please join as we launch a new community group – the EDI Research Network. Open to all students, academic staff and professional staff, the Network seeks to support researchers, professional staff and students to collaborate; embed equity, diversity and inclusion principles into existing research practice; and undertake research with an equity, diversity and inclusion lens. Join us for lunch and a formal launch, with opportunities for networking and brainstorming Network activities and events for 2024.</p>
+        </div>
+    </a>
+</div>
+
+<!-- Dismantling Barriers / Building Connections Design Workshop -->
+<div class="col-xs-12 col-sm-4 box-listing-element__wrapper mix Wed Afternoon Staff Researchers HDR ECR Community Clayton MADA">
+    
+    <a href="https://www.eventbrite.com.au/e/dismantling-barriers-building-connections-tickets-730329153157?aff=oddtdtcreator" class="box-listing-element shadow-hover" title="Dismantling Barriers / Building Connections Design Workshop" target="_blank">
+    
+        <span class="box-listing-element__thumb-link">
+            <img src="https://www.monash.edu/__data/assets/image/0005/3433946/dismantling-barriers.png" alt="" class="box-listing-element__thumb-image" loading="lazy">
+        </span>
+        <div class="box-listing-element__blurb">
+            <h2 class="box-listing-element__heading">Dismantling Barriers / Building Connections Design Workshop</h2>
+             <p class="box-listing-element__description">
+                Wednesday, 1 – 3pm
+                <br>
+                Monash University, Chancellery Room, Chancellery Building, <br>
+            27 Chancellor's Walk, Clayton Campus
+            </p>
+            <p class="box-listing-element__description">This workshop will be delivered by Monash University's XYX Lab in collaboration with the Equity, Diversity and Inclusion Team. Together, we will delve into creative and innovative ways to break down structural barriers across our university to enhance accessibility, inclusivity, and equity.This session will showcase the XYX Lab's co-design methodology demonstrating how Monash collaboratively advances our EDI goals and create a more inclusive university experience.</p>
+        </div>
+    </a>
+</div>
+
+<!-- Developing your potential for impact statements -->
+<div class="col-xs-12 col-sm-4 box-listing-element__wrapper mix Thu Afternoon Staff Researchers HDR ECR Parkville PPS">
+    
+    <a href="https://www.eventbrite.com.au/e/developing-your-potential-for-impact-statements-tickets-730345802957?aff=oddtdtcreator" class="box-listing-element shadow-hover" title="Developing your potential for impact statements" target="_blank">
+    
+        <span class="box-listing-element__thumb-link">
+            <img src="https://www.monash.edu/__data/assets/image/0005/3431336/Developing-your-potential-for-impact-statements.png" alt="" class="box-listing-element__thumb-image" loading="lazy">
+        </span>
+        <div class="box-listing-element__blurb">
+            <h2 class="box-listing-element__heading">Developing your potential for impact statements</h2>
+             <p class="box-listing-element__description">
+                Thursday, 2 – 4pm
+                <br>
+               381 Royal Parade (Room CLS6), Parkville Campus
+            </p>
+            <p class="box-listing-element__description">Join our hands-on, two-hour workshop designed to uncover strategies and methods for communicating the impact of your research and projects more effectively. Our goal is to enhance your ability to craft impactful, succinct statements that resonate with your intended audience. Don't miss this opportunity to sharpen your communication skills and make a lasting impression.</p>
+        </div>
+    </a>
+</div>
+
+<!-- Australian Law Academics and Research Impact: Strategies and Experiences -->
+<div class="col-xs-12 col-sm-4 box-listing-element__wrapper mix Wed Afternoon Staff Researchers HDR ECR Clayton LAW">
+    
+    <a href="https://www.eventbrite.com.au/e/being-an-expert-the-experiences-of-engagement-and-impact-through-expertise-tickets-744679525507?aff=oddtdtcreator" class="box-listing-element shadow-hover" title="Australian Law Academics and Research Impact: Strategies and Experiences" target="_blank">
+    
+        <span class="box-listing-element__thumb-link">
+            <img src="https://www.monash.edu/__data/assets/image/0010/3436570/banner-feature-box.png" alt="" class="box-listing-element__thumb-image" loading="lazy">
+        </span>
+        <div class="box-listing-element__blurb">
+            <h2 class="box-listing-element__heading">Australian Law Academics and Research Impact: Strategies and Experiences</h2>
+             <p class="box-listing-element__description">
+            Wednesday, 2 - 3pm
+            <br>
+            Room G10, Ground floor, Law Building, <br>15 Ancora Imparo Way, Clayton Campus and Online
+            </p>
+            <p class="box-listing-element__description">There are several ways in which academics are recognised as experts, including through their teaching and research which is sought out by others within the academy and through their research topic expertise and stakeholder insider knowledge which they are known for outside the academy. In addition to this, academics' take steps to promote their expertise through social media and non-academic publishing, to develop more beneficial connections with stakeholders, community, and the general public, furthering their potential for impact. Join us to hear from Ilana Bollingford whose research investigates the experiences of law academics in relation to research engagement and impact policy. She is interested in how extrinsic elements such as policy and technology inform the experiences of legal actors such as law academics, judges, and the legal profession. <br>Ilana is also the Centre Manager, QUT Centre for Robotics, and a member of the QUT Humans, Technology, Law Centre.</p>
+        </div>
+    </a>
+</div>
+
+<!-- Monash Business School Research Impact Showcase 2023 -->
+<div class="col-xs-12 col-sm-4 box-listing-element__wrapper mix Wed Afternoon Students Staff Researchers HDR ECR Community Caulfield BusEco">
+    
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfEz3djNSak_3izjMG4j-QgUUuugDGNx9GwxMSKHElJL3dKFQ/viewform" class="box-listing-element shadow-hover" title="Monash Business School Research Impact Showcase 2023" target="_blank">
+    
+        <span class="box-listing-element__thumb-link">
+            <img src="https://www.monash.edu/__data/assets/image/0010/512002/Monash-Feature-Box-Our-Locations-Caulfield.jpg" alt="" class="box-listing-element__thumb-image" loading="lazy">
+        </span>
+        <div class="box-listing-element__blurb">
+            <h2 class="box-listing-element__heading">Monash Business School Research Impact Showcase 2023</h2>
+             <p class="box-listing-element__description">
+            Wednesday, 10 - 11am
+            <br>
+            Room 9.01, Building H, Caulfield Campus
+            </p>
+            <p class="box-listing-element__description">Interested in learning about current PhD research at the Monash Business School? Come along to our Research Impact Showcase 2023 - Poster Presentation event showcasing impactful research from our PhD students.</p>
+        </div>
+    </a>
+</div>
+
+<!-- Empowering women innovators at Monash -->
+<div class="col-xs-12 col-sm-4 box-listing-element__wrapper mix Thu Morning Staff Researchers HDR ECR Clayton INNOVATION">
+    
+    <a href="https://www.eventbrite.com.au/e/empowering-female-innovators-at-monash-tickets-730336725807?aff=oddtdtcreator" class="box-listing-element shadow-hover" title="Empowering women innovators at Monash" target="_blank">
+    
+        <span class="box-listing-element__thumb-link">
+            <img src="https://www.monash.edu/__data/assets/image/0008/3433949/Empowering-female-researchers.png" alt="" class="box-listing-element__thumb-image" loading="lazy">
+        </span>
+        <div class="box-listing-element__blurb">
+            <h2 class="box-listing-element__heading">Empowering women innovators at Monash</h2>
+             <p class="box-listing-element__description">
+                Thursday, 11am - 12pm
+                <br>
+                The Generator, Building 60, <br> 23 College Walk, Clayton Campus
+            </p>
+            <p class="box-listing-element__description">Join us for an event tailored to women researchers, where you'll discover the vast support and resources Monash Innovation offers. Connect with a vibrant community, uncover valuable tools, and embark on a journey of innovation for societal impact.</p>
+        </div>
+    </a>
+</div>
+
+<!-- MIPS consumer engagement showcase -->
+<div class="col-xs-12 col-sm-4 box-listing-element__wrapper mix Thu Afternoon Staff Researchers HDR ECR Community Parkville Online PPS">
+    
+    <a href="https://www.eventbrite.com.au/e/mips-consumer-engagement-showcase-tickets-730338621477?aff=oddtdtcreator" class="box-listing-element shadow-hover" title="MIPS consumer engagement showcase" target="_blank">
+    
+        <span class="box-listing-element__thumb-link">
+            <img src="https://www.monash.edu/__data/assets/image/0005/3430670/MIPS.png" alt="" class="box-listing-element__thumb-image" loading="lazy">
+        </span>
+        <div class="box-listing-element__blurb">
+            <h2 class="box-listing-element__heading">MIPS consumer engagement showcase</h2>
+             <p class="box-listing-element__description">
+                Thursday, 12 - 1pm
+                <br>
+              LT1, 381 Royal Parade, Parkville Campus and Online
+            </p>
+            <p class="box-listing-element__description">This one-hour panel discussion and Q&A session will include representatives from each theme sharing their experience engaging with consumers. This event will celebrate ways in which MIPS is enhancing research impact and translation by engaging with consumers, as means to encourage other labs/groups to begin to think about consumer engagement.</p>
+        </div>
+    </a>
+</div>
+
+<!-- Print, Partnerships and Monash University Library’s Special Collections -->
+<div class="col-xs-12 col-sm-4 box-listing-element__wrapper mix Thu Afternoon Staff Researchers HDR ECR Community Open-for-research Clayton LIB">
+    
+    <a href="https://www.eventbrite.com.au/e/open-for-research-special-collections-tickets-730346715687?aff=oddtdtcreator" class="box-listing-element shadow-hover" title="Print, Partnerships and Monash University Library’s Special Collections" target="_blank">
+    
+        <span class="box-listing-element__thumb-link">
+            <img src="https://www.monash.edu/__data/assets/image/0008/3435488/Untitled-design-3.png" alt="" class="box-listing-element__thumb-image" loading="lazy">
+        </span>
+        <div class="box-listing-element__blurb">
+            <h2 class="box-listing-element__heading">Print, Partnerships and Monash University Library’s Special Collections</h2>
+             <p class="box-listing-element__description">
+                Thursday, 1 - 1.45pm
+                <br>
+                Sir Louis Matheson Library, <br> 40 Exhibition Walk, Clayton Campus
+            </p>
+            <p class="box-listing-element__description">The Library will display a selection of rare material showcasing the strengths of our Special Collections, describe examples of research previously undertaken using them, and highlight ways you could use these collections in your future research projects. Collections showcased will include a selection of music archives, medical history and public health collections, and materials that belong to the study of gender, society and culture. We will also cover ways that you can use the Library’s digitisation services to access the collections in innovative and less traditional methods.</p>
+        </div>
+    </a>
+</div>
+
+<!-- Masterclass with Prof. Tristan Kennedy, Pro Vice-Chancellor (Indigenous) -->
+<div class="col-xs-12 col-sm-4 box-listing-element__wrapper mix Thu Afternoon Staff Researchers HDR ECR Community Clayton DVCR">
+    
+    <a href="https://www.eventbrite.com.au/e/751446515757?aff=oddtdtcreator" class="box-listing-element shadow-hover" title="Masterclass with Prof. Tristan Kennedy, Pro Vice-Chancellor (Indigenous)" target="_blank">
+    
+        <span class="box-listing-element__thumb-link">
+            <img src="https://www.monash.edu/__data/assets/image/0008/3423833/Indigenous-Research-Community-Collaboration-alternate-3.png" alt="" class="box-listing-element__thumb-image" loading="lazy">
+        </span>
+        <div class="box-listing-element__blurb">
+            <h2 class="box-listing-element__heading">Masterclass with Prof. Tristan Kennedy, Pro Vice-Chancellor (Indigenous)</h2>
+             <p class="box-listing-element__description">
+                Thursday, 1 - 2pm
+                <br>
+                Chancellery Building, Chancellery Room, <br>
+                27 Chancellors Walk, Clayton Campus and Online
+            </p>
+            <p class="box-listing-element__description">This event will follow the Indigenous Research Community Collaboration Event which celebrates the positive impacts of Monash research in collaboration with Indigenous communities.</p>
+        </div>
+    </a>
+</div>
+
+<!-- Monash Indigenous Studies Centre (MISC) archaeology laboratories -->
+<div class="col-xs-12 col-sm-4 box-listing-element__wrapper mix Thu Afternoon Staff Researchers HDR ECR Open-for-research ARTS Clayton">
+    
+    <a href="https://www.eventbrite.com.au/e/monash-indigenous-studies-centre-misc-archaeology-laboratories-tickets-740607596257?aff=oddtdtcreator" class="box-listing-element shadow-hover" title="Monash Indigenous Studies Centre (MISC) archaeology laboratories" target="_blank">
+    
+        <span class="box-listing-element__thumb-link">
+            <img src="https://www.monash.edu/__data/assets/image/0007/3434677/Indigenous-Research-Community-Collaboration-alternate-1.png" alt="" class="box-listing-element__thumb-image" loading="lazy">
+        </span>
+        <div class="box-listing-element__blurb">
+            <h2 class="box-listing-element__heading">Monash Indigenous Studies Centre (MISC) archaeology laboratories</h2>
+             <p class="box-listing-element__description">
+                Thursday, 2 - 3pm
+                <br>
+                Menzies Building, 20 Chancellors Walk, Clayton Campus
+            </p>
+            <p class="box-listing-element__description">Visit state-of-the-art archaeology laboratories where artefacts and soils are analysed to see what they can tell us about the Indigenous past.</p>
+        </div>
+    </a>
+</div>
+
+<!-- RTA End-of-Year Celebration and Second Cohort Launch -->
+<div class="col-xs-12 col-sm-4 box-listing-element__wrapper mix Wed Afternoon By-invitation Clayton DVCR">
+    
+    <a class="box-listing-element" title="RTA End-of-Year Celebration and Second Cohort Launch">
+    
+        <span class="box-listing-element__thumb-link">
+            <img src="https://www.monash.edu/__data/assets/image/0011/970886/MADA-students-constructing-a-wooden-sculpture-2016.jpg" alt="" class="box-listing-element__thumb-image" loading="lazy">
+        </span>
+        <div class="box-listing-element__blurb">
+            <h2 class="box-listing-element__heading">RTA End-of-Year Celebration and Second Cohort Launch</h2>
+             <p class="box-listing-element__description">
+                By-invitation event <br>
+                Thursday, 1 - 5pm
+                <br>
+                The Chancellery Room, <br> 27 Chancellors Walk, Clayton Campus
+            </p>
+            <p class="box-listing-element__description">Join us for an end-of-year celebration, marking the completion of year one in the Research Talent Acceletaror program and welcoming the new cohort as they begin the progrma in 2024.  This event is an opportuntity to connect with leading researchers across Monash, and celebrate your journey in this immersive and transformative program.</p>
+        </div>
+    </a>
+</div>
+
+<!-- AIMday - Maths and AI Meet Industry -->
+<div class="col-xs-12 col-sm-4 box-listing-element__wrapper mix Fri Morning Staff Researchers HDR ECR Clayton MDFI">
+    
+    <a href="https://www.monash.edu/data-futures-institute/news/events/monash-aim-day-2023" class="box-listing-element shadow-hover" title="AIMday - Maths and AI Meet Industry" target="_blank">
+    
+        <span class="box-listing-element__thumb-link">
+            <img src="https://www.monash.edu/__data/assets/image/0011/3426464/AIMDay.png" alt="" class="box-listing-element__thumb-image" loading="lazy">
+        </span>
+        <div class="box-listing-element__blurb">
+            <h2 class="box-listing-element__heading">AIMday - Maths and AI Meet Industry</h2>
+             <p class="box-listing-element__description">
+                Friday, 8.30am - 5.30pm
+                <br>
+                9 Rainforest Walk, Clayton Campus
+            </p>
+            <p class="box-listing-element__description">AIMday is an opportunity for a diverse group of academics, higher-degree students and organisations to connect and exchange knowledge. It is simply the idea that a broad mix of academic researchers can provide different perspectives and surprising new avenues to solving real-world problems – not to mention seed new ways for collaboration.</p>
+        </div>
+    </a>
+</div>
+
+<!-- Bootcamp - Online profiles with impact - Grab an ORCiD and watch your online presence bloom! -->
+<div class="col-xs-12 col-sm-4 box-listing-element__wrapper mix Fri Afternoon Staff Researchers HDR ECR Online LIB">
+    
+    <a href="https://www.eventbrite.com.au/e/bootcamp-online-profiles-with-impact-tickets-730348089797?aff=oddtdtcreator" class="box-listing-element shadow-hover" title="Bootcamp - Online profiles with impact - Grab an ORCiD and watch your online presence bloom!" target="_blank">
+    
+        <span class="box-listing-element__thumb-link">
+            <img src="https://www.monash.edu/__data/assets/image/0009/3431178/Bootcamp-Online-profiles-with-impact.png" alt="" class="box-listing-element__thumb-image" loading="lazy">
+        </span>
+        <div class="box-listing-element__blurb">
+            <h2 class="box-listing-element__heading">Bootcamp - Online profiles with impact - Grab an ORCiD and watch your online presence bloom!</h2>
+             <p class="box-listing-element__description">
+                Friday, 12 – 12.30pm
+                <br>
+                Online
+            </p>
+            <p class="box-listing-element__description">A well curated online researcher profile maximises your visibility and promotes the impact of your research. An ORCID ID (Open Researcher Contributor IDentifier) is a persistent digital identifier you can set up to curate your biography, grant, employment, qualifications and publication information, in a single profile. ORCID IDs are used by researchers around the world, as well as by publishers and funders. Join us to set up an ORCID ID, and start populating your profile with your research outputs, by connecting your Scopus author ID and/or Web of Science researcher ID.</p>
+        </div>
+    </a>
+</div>
+
+<!-- Bootcamp - Top tips for APC free journal publishing -->
+<div class="col-xs-12 col-sm-4 box-listing-element__wrapper mix Fri Afternoon Staff Researchers HDR ECR Online LIB">
+    
+    <a href="https://www.eventbrite.com.au/e/bootcamp-top-tips-for-apc-free-journal-publishing-tickets-730349754777?aff=oddtdtcreator" class="box-listing-element shadow-hover" title="Bootcamp - Top tips for APC free journal publishing" target="_blank">
+    
+        <span class="box-listing-element__thumb-link">
+            <img src="https://www.monash.edu/__data/assets/image/0020/3431180/Bootcamp-top-tips-for-APC.png" alt="" class="box-listing-element__thumb-image" loading="lazy">
+        </span>
+        <div class="box-listing-element__blurb">
+            <h2 class="box-listing-element__heading">Bootcamp - Top tips for APC free journal publishing</h2>
+             <p class="box-listing-element__description">
+                Friday, 1 – 1.30pm
+                <br>Online
+                </p>
+            <p class="box-listing-element__description">Article processing charges (APCs) are levies imposed by publishers for open access publications. Costs can differ, with some high-impact journals demanding over $10,000 AUD per article. Authors aim to disseminate their research widely, yet APCs pose a substantial financial strain on them, their institutions, and funding sources. In this session, discover strategies to sidestep APCs by leveraging transformative agreements, identifying Diamond OA journals, and other cost-saving tips.</p>
+        </div>
+    </a>
+</div>
+
+<!-- Critical infrastructure for human rights monitoring: The Monash IP Observatory (BusEco) -->
+<div class="col-xs-12 col-sm-4 box-listing-element__wrapper mix Fri Afternoon Researchers HDR ECR Community Caulfield BusEco">
+    
+    <a href="https://www.eventbrite.com.au/e/critical-infrastructure-for-human-rights-monitoring-monash-ip-observatory-tickets-747855414677?aff=oddtdtcreator" class="box-listing-element shadow-hover" title="Critical infrastructure for human rights monitoring: The Monash IP Observatory" target="_blank">
+    
+        <span class="box-listing-element__thumb-link">
+            <img src="https://www.monash.edu/__data/assets/image/0006/3426477/IT-INSFRASTRUCTURE.png" alt="" class="box-listing-element__thumb-image" loading="lazy">
+        </span>
+        <div class="box-listing-element__blurb">
+            <h2 class="box-listing-element__heading">Critical infrastructure for human rights monitoring: The Monash IP Observatory</h2>
+             <p class="box-listing-element__description">
+                Friday, 3 - 4pm
+                <br>
+                Pavilion, Level 8, Building H, Caulfield Campus
+            </p>
+            <p class="box-listing-element__description">Hear from the pioneering team from SoDaLab, the first of Monash Business School's Impact Labs. Learn about how connectivity data is providing valuable insights for the global community, from natural disasters to geopolitical incidents. This global technology platform continuously monitors the internet, making over 3 billion daily measurements to provide vital data to the United Nations. Don't miss this opportunity to explore the impact of our digital observatory on society.</p>
+        </div>
+    </a>
+</div>
+
+<!-- Measuring what matters: The value of purpose-driven enterprises -->
+<div class="col-xs-12 col-sm-4 box-listing-element__wrapper mix Fri Afternoon HDR ECR Community Caulfield BusEco">
+    
+    <a href="https://www.eventbrite.com.au/e/measuring-what-matters-the-value-of-purpose-driven-enterprises-tickets-747854632337?aff=oddtdtcreator" class="box-listing-element shadow-hover" title="Measuring what matters: The value of purpose-driven enterprises" target="_blank">
+    
+        <span class="box-listing-element__thumb-link">
+            <img src="https://www.monash.edu/__data/assets/image/0008/3434741/Buseco_Measuring.png" alt="" class="box-listing-element__thumb-image" loading="lazy">
+        </span>
+        <div class="box-listing-element__blurb">
+            <h2 class="box-listing-element__heading">Measuring what matters: The value of purpose-driven enterprises</h2>
+             <p class="box-listing-element__description">
+                Friday, 2 - 3pm
+                <br>
+                Pavilion, Level 8, Building H, Caulfield Campus
+            </p>
+            <p class="box-listing-element__description">Cooperative and Mutual Enterprises (CMEs) represent purpose-driven alternatives to investor-owned firms, but their value creation defies standard accounting measures. Monash Business School, together with industry partners, developed a groundbreaking Mutual Value Measurement (MVM) framework which allows CMEs to fully measure their mutual value. Through a Q&A session Melina Morrison, CEO of the CME national peak body, BCCM, will discuss the CMEs and their history and role in Australia and globally and her organisation's research partnership with MBUS and the Mutual Value Lab, and Geoff Henderson, the CEO of Unimutual, will discuss how the MVM has revolutionised reporting and helped the organisation define its value and impact.</p>
+        </div>
+    </a>
+</div>
+
+<!-- BDI, Monash Biomedicine Discovery Institute  -->
+<div class="col-xs-12 col-sm-4 box-listing-element__wrapper mix Fri Morning HDR ECR Community Open-for-research Clayton BDI">
+    
+    <a href="https://www.eventbrite.com.au/e/bdi-monash-biomedicine-discovery-institute-tickets-743383549207?aff=oddtdtcreator" class="box-listing-element shadow-hover" title="BDI, Monash Biomedicine Discovery Institute" target="_blank">
+    
+        <span class="box-listing-element__thumb-link">
+            <img src="https://www.monash.edu/__data/assets/image/0004/3435493/bdi.jpg" alt="" class="box-listing-element__thumb-image" loading="lazy">
+        </span>
+        <div class="box-listing-element__blurb">
+            <h2 class="box-listing-element__heading">BDI, Monash Biomedicine Discovery Institute</h2>
+             <p class="box-listing-element__description">
+                Friday, 9.30 - 10.15am <br>
+                Friday, 10.45 - 11.30am
+                <br>
+               Foyer on ground floor of strip building
+               <br>76/77 - 19 Innovation Walk,<br>
+               Clayton Campus
+            </p>
+            <p class="box-listing-element__description">See biomedical research labs in action and talk to the research staff about their discoveries. You'll see how cutting edge research technologies are being used to find cures for cancer, understand how DNA works and how gut pathogens interact with the host and cause disease. On the tour, you will meet biomedical scientists who are leading international research efforts, including PhD students who have joined Monash from abroad. All spaces are wheel chair accessible. Closed-toed shoes and long sleeves are required.</p>
+        </div>
+    </a>
+</div>
+
+<!-- Monash Innovation Labs Tour -->
+<div class="col-xs-12 col-sm-4 box-listing-element__wrapper mix Thu Morning Staff Students Clayton ENG">
+    
+    <a href="https://www.eventbrite.com.au/e/monash-innovation-labs-tour-tickets-744742092647?aff=oddtdtcreator" class="box-listing-element shadow-hover" title="Monash Innovation Labs Tour" target="_blank">
+    
+        <span class="box-listing-element__thumb-link">
+            <img src="https://www.monash.edu/__data/assets/image/0005/3436781/Monash-lab-tours.png" alt="" class="box-listing-element__thumb-image" loading="lazy">
+        </span>
+        <div class="box-listing-element__blurb">
+            <h2 class="box-listing-element__heading">Monash Innovation Labs Tour</h2>
+             <p class="box-listing-element__description">
+                Thursday, 11 - 11.30am <br>
+              Entrance of the Monash Innovation Labs, <br>
+23 College Walk, Clayton Campus
+            </p>
+            <p class="box-listing-element__description">Monash Innovation Labs (MIL) is a place for businesses  to design, experiment and innovate  - utilising Monash expertise, student talent and world class facilities as they lead the charge towards a new future. The tour will showcase the state of the art Digital Twin Manufacturing and Infrastructure, Makerspace, and facilities for businesses to be based on campus to progress collaborative research and innovation.</p>
+        </div>
+    </a>
+</div>
+
+<!-- Partnering for Societal Impact: the Modern Slavery Disclosure Index-->
+<div class="col-xs-12 col-sm-4 box-listing-element__wrapper mix Fri Afternoon Staff Students Researchers HDR ECR Community Caulfield BusEco">
+    
+    <a href="https://www.eventbrite.com.au/e/747851743697?aff=oddtdtcreator" class="box-listing-element shadow-hover" title="Partnering for Societal Impact: the Modern Slavery Disclosure Index" target="_blank">
+    
+        <span class="box-listing-element__thumb-link">
+            <img src="https://www.monash.edu/__data/assets/image/0011/3426473/Partnering-for-Societal-Impact-the-Modern-Slavery-Disclosure-Index-.png" alt="" class="box-listing-element__thumb-image" loading="lazy">
+        </span>
+        <div class="box-listing-element__blurb">
+            <h2 class="box-listing-element__heading">Partnering for Societal Impact: the Modern Slavery Disclosure Index</h2>
+             <p class="box-listing-element__description">
+                Friday, 12 - 1pm
+                <br>
+               The Pavilion, Building H, Level 8, <br>
+               900 Dandenong Rd, Caulfield Campus
+            </p>
+            <p class="box-listing-element__description">Join a dynamic panel discussion celebrating the partnership between the Monash Centre for Financial Studies (MCFS) and givvable in the Modern Slavery Research Program. This innovative collaboration aims to improve sustainability data and reporting through data sharing and tool development. Explore how MCFS and givvable are driving impactful research that helps Australian businesses navigate modern slavery risks. Plus, gain practical insights from a top 100 ASX-listed company representative on applying Monash's Modern Slavery Disclosure Framework.</p>
+        </div>
+    </a>
+</div>
+
+<!-- Bridging Research and Real-World Impact: A Mixer Hosted by the Westpac Scholars -->
+<div class="col-xs-12 col-sm-4 box-listing-element__wrapper mix Fri Evening Staff Researchers HDR ECR Community Clayton DVCE">
+    
+    <a href="https://www.eventbrite.com.au/e/westpac-scholars-event-tickets-730350316457?aff=oddtdtcreator" class="box-listing-element shadow-hover" title="Bridging Research and Real-World Impact: A Mixer Hosted by the Westpac Scholars" target="_blank">
+    
+        <span class="box-listing-element__thumb-link">
+            <img src="https://www.monash.edu/__data/assets/image/0003/3423828/westpac1.jpg" alt="" class="box-listing-element__thumb-image" loading="lazy">
+        </span>
+        <div class="box-listing-element__blurb">
+            <h2 class="box-listing-element__heading">Bridging Research and Real-World Impact: A Mixer Hosted by the Westpac Scholars</h2>
+             <p class="box-listing-element__description">
+                Friday, 4 - 6pm
+                <br>
+                The Chancellery Room,<br> 27 Chancellor's Walk, Clayton Campus
+            </p>
+            <p class="box-listing-element__description">Energise your research journey with this dynamic world-cafe style event, designed to empower you to lead positive social change through your work. Crafted for Ph.D. students and early career researchers, engage in enlightening conversations with accomplished leaders who are connecting academia with communities. Join interactive small-group discussions and draw inspiration from real-world examples of achieving translational impact in your research endeavors.</p>
+        </div>
+    </a>
+</div>
+
+<!-- Monash Business Behavioural Lab -->
+<div class="col-xs-12 col-sm-4 box-listing-element__wrapper mix Fri Morning Staff Students Caulfield Open-for-research BusEco">
+    
+    <a href="https://www.eventbrite.com.au/e/monash-business-behavioural-lab-tickets-747861442707?aff=oddtdtcreator" class="box-listing-element shadow-hover" title="Monash Business Behavioural Lab" target="_blank">
+    
+        <span class="box-listing-element__thumb-link">
+            <img src="https://www.monash.edu/__data/assets/image/0005/3439706/banner-feature-box-2.png" alt="" class="box-listing-element__thumb-image" loading="lazy">
+        </span>
+        <div class="box-listing-element__blurb">
+            <h2 class="box-listing-element__heading">Monash Business Behavioural Lab</h2>
+             <p class="box-listing-element__description">
+                Friday, 10 - 11am
+                <br>
+                Monash University Caulfield Campus, <br>Building S, Ground Floor
+                <br>900 Dandenong Road Caulfield East, VIC 3145
+            </p>
+            <p class="box-listing-element__description">Find out about neurophysiological techniques to study judgement and decision-making in a complex world. You will be able to some of the technologies commonly used in our lab, some of which are also used by researchers in real world settings. Devices measure physiological signals and link them to psychology, and include eye tracking, pupillometry, skin electrical conductivity, electrocardiography, and electroencephalography. Measurements from these devices provide unique avenues to build and test theories for various cognitive and emotional processes, such as attention, memory, stress, emotional intelligence, etc. They can be beneficial for disciplines like accounting, finance, marketing, and behavioural economics, and many more. Examples of their feasibility in complex decision-making will be presented through the effects of uncertainty visualisation on professional judgement, the role of emotional engagement in financial trading, and neurophysiological mechanisms underlying professional scepticism and compulsive buying behaviour.</p>
+        </div>
+    </a>
+</div>
+
+<!-- REDunion Alumni Event -->
+<div class="col-xs-12 col-sm-4 box-listing-element__wrapper mix Fri Afternoon Clayton Only-by-invitation DVCE">
+    
+    <a class="box-listing-element" title="REDunion Alumni Event">
+    
+        <span class="box-listing-element__thumb-link">
+            <img src="https://www.monash.edu/__data/assets/image/0007/3450859/redunion.png" alt="" class="box-listing-element__thumb-image" loading="lazy">
+        </span>
+        <div class="box-listing-element__blurb">
+            <h2 class="box-listing-element__heading">REDunion Alumni Event</h2>
+             <p class="box-listing-element__description">
+                Event participation: Only by invitation <br>
+                Friday, 3 - 4pm
+                <br>
+                The Chancellery, Peter Wade Lounge,<br>27 Chancellor's Walk, Clayton Campus
+            </p>
+            <p class="box-listing-element__description">An exclusive reunion and social mixer event for participants in the inaugural RED program of 2023.</p>
+        </div>
+    </a>
+</div>
+
+    </div>
+</div>
+<script src="https://www.monash.edu/__data/assets/js_file/0003/1415883/mixitup.min.js"></script>
+<script src="https://www.monash.edu/__data/assets/js_file/0006/1429062/mixitup-multifilter.js"></script>
+<script>
+    var containerEl = document.querySelector('.research-week-events');
+    var mixer = mixitup(containerEl, {
+    multifilter: {
+        enable: true
+    },
+    animation:{
+        enable:false
+    }
+});
+</script>
